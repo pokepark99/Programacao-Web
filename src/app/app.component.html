@@ -1,20 +1,57 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!--NOTEM QUE ISTO FOI FEITO NO INICIO DO SEMESTRE, E NECESSARIO ALTERAR ISTO PARA FICAR MUITO MELHOR-->
+<!DOCTYPE html>
+<html lang="pt-pt, en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Inicial</title>
+    <meta name = "author" content="Sofia Carvalho, Daniela Pereira, Ricardo Silva">
+    <link rel="stylesheet" href="app.component.css">
+</head>
 
+<body>
 
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+    <header>
+        <h1>CATALOGO</h1>
+    </header>
 
+    <main>
+        <div class = "museus">
+        <!--museu Memorial de Guerra Australiano-->
+        <div class="museu">
+            <a href = "1.AWM.html"><img src = "Imagens/Australian War Memorial.jpg" alt = "Memorial de Guerra Australiano" height = "150px" width = "250px"></a>
+            <p><b>Memorial de Guerra Australiano</b></p>
+            <p>descricao</p>
+        </div>
+
+        <!--museu Museu de Melbourne-->
+        <div class="museu">
+            <a href = "2.MM.html"><img src = "Imagens/Melbourne Museum.jpg" alt = "Museu de Melbourne" height = "150px" width = "250px"></a>
+            <p><b>Museu de Melbourne</b></p>
+            <p>descricao</p>
+        </div>
+        
+
+        <!--museu Art Gallery of New South Wales-->
+        <div class="museu">
+            <a href = "3.AGNSW.html"><img src = "Imagens/Art Gallery of New South Wales.jpg" alt = "Art Gallery of New South Wales" height = "150px" width = "250px"></a>
+            <p><b>Art Gallery of New South Wales </b></p>
+            <p>descricao</p>   
+        </div>
+
+        <!--museu Museu Marítimo Nacional Australiano-->
+        <div class="museu">
+            <a href = "4.ANMM.html"><img src = "Imagens/Australian National Maritime Museum.jpg" alt = "Australian National Maritime Museum" height = "150px" width = "250px"></a>
+            <p><b>Museu Marítimo Nacional Australiano</b></p>
+            <p>descricao</p>    
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <p align = "right">&copy; 2024 NOME</p>
+    </footer>
+</body>
+</html>
 
 <router-outlet />
