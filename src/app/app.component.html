@@ -1,8 +1,6 @@
-
     <!--Header-->
     <header class="header">
         <div class="d-flex justify-content-between align-items-center">
-            <!--<button class="btn btn-primary" onclick="traduzirPagina()">Traduzir para ingles</button>-->
             <button class="btn btn-primary" (click)="traduzirPagina()">Traduzir para ingles</button>
             <div class="input-group" style="width: 300px;">
                 <input type="text" class="form-control" placeholder="Search">
@@ -11,46 +9,37 @@
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Museums
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Louvre</a>
-                            <a class="dropdown-item" href="#">British Museum</a>
-                            <a class="dropdown-item" href="#">Metropolitan Museum of Art</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">More Museums...</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item dropdown" (click)="toggleDropdown()">
+                <a class="nav-link dropdown-toggle" href="" role="button" aria-expanded="false">Museus</a>
+                
+                @if(dropdown){
+                    <ul class="dropdown-menu" @if(dropdown)>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                      </ul>  
+                }
+                
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Contactos</a>
+            </li>
+        </ul>
     </header>
 
-
-
-
-
-
-    <header>
-        <h1>CATALOGO</h1>
-    </header>
+    
+    <h1>CATALOGO</h1>
+    
 
     <main>
         <div class = "museus">
@@ -58,14 +47,30 @@
             <div class="museu">
                 <a href = "1.AWM.html"><img src = "../assets/images/Australian War Memorial.jpg" alt = "Memorial de Guerra Australiano" height = "150px" width = "250px"></a>
                 <p><b>Memorial de Guerra Australiano</b></p>
-                <p>descricao</p>
+                <p class="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing <br>
+                    elit, sed do eiusmod tempor incididunt ut labore <br>
+                    et dolore magna aliqua. Ut enim ad minim veniam, <br>
+                    quis nostrud exercitation ullamco laboris nisi ut <br>
+                    aliquip ex ea commodo consequat. Duis aute irure <br>
+                    dolor in reprehenderit in voluptate velit esse <br>
+                    cillum dolore eu fugiat nulla pariatur. Excepteur <br>
+                    sint occaecat cupidatat non proident, sunt in culpa <br>
+                    qui officia deserunt mollit anim id est laborum.</p>
             </div>
 
             <!--museu Museu de Melbourne-->
             <div class="museu">
                 <a href = "2.MM.html"><img src = "../assets/images/Melbourne Museum.jpg" alt = "Museu de Melbourne" height = "150px" width = "250px"></a>
                 <p><b>Museu de Melbourne</b></p>
-                <p>descricao</p>
+                <p class="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing <br>
+                    elit, sed do eiusmod tempor incididunt ut labore <br>
+                    et dolore magna aliqua. Ut enim ad minim veniam, <br>
+                    quis nostrud exercitation ullamco laboris nisi ut <br>
+                    aliquip ex ea commodo consequat. Duis aute irure <br>
+                    dolor in reprehenderit in voluptate velit esse <br>
+                    cillum dolore eu fugiat nulla pariatur. Excepteur <br>
+                    sint occaecat cupidatat non proident, sunt in culpa <br>
+                    qui officia deserunt mollit anim id est laborum.</p>
             </div>
             
 
@@ -73,14 +78,30 @@
             <div class="museu">
                 <a href = "3.AGNSW.html"><img src = "../assets/images/Art Gallery of New South Wales.jpg" alt = "Art Gallery of New South Wales" height = "150px" width = "250px"></a>
                 <p><b>Art Gallery of New South Wales </b></p>
-                <p>descricao</p>   
+                <p class="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing <br>
+                    elit, sed do eiusmod tempor incididunt ut labore <br>
+                    et dolore magna aliqua. Ut enim ad minim veniam, <br>
+                    quis nostrud exercitation ullamco laboris nisi ut <br>
+                    aliquip ex ea commodo consequat. Duis aute irure <br>
+                    dolor in reprehenderit in voluptate velit esse <br>
+                    cillum dolore eu fugiat nulla pariatur. Excepteur <br>
+                    sint occaecat cupidatat non proident, sunt in culpa <br>
+                    qui officia deserunt mollit anim id est laborum.</p>
             </div>
 
             <!--museu Museu Marítimo Nacional Australiano-->
             <div class="museu">
                 <a href = "4.ANMM.html"><img src = "../assets/images/Australian National Maritime Museum.jpg" alt = "Australian National Maritime Museum" height = "150px" width = "250px"></a>
                 <p><b>Museu Marítimo Nacional Australiano</b></p>
-                <p>descricao</p>    
+                <p class="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing <br>
+                    elit, sed do eiusmod tempor incididunt ut labore <br>
+                    et dolore magna aliqua. Ut enim ad minim veniam, <br>
+                    quis nostrud exercitation ullamco laboris nisi ut <br>
+                    aliquip ex ea commodo consequat. Duis aute irure <br>
+                    dolor in reprehenderit in voluptate velit esse <br>
+                    cillum dolore eu fugiat nulla pariatur. Excepteur <br>
+                    sint occaecat cupidatat non proident, sunt in culpa <br>
+                    qui officia deserunt mollit anim id est laborum.</p> 
             </div>
         </div>
     </main>
