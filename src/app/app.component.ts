@@ -10,4 +10,10 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'TrabalhoWeb';
+
+  traduzirPagina(){
+    // codigo para traduzir pag
+    // o alerta e so para confirmar que a funcao esta a funcionar
+    alert('Page will be translated to English');
+  }
 }
