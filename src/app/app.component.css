@@ -10,8 +10,8 @@ footer{
 }
 
 .museu {
-    flex-basis: calc(33.33% - 20px); /* 20 px de espaco entre os museus */
-    text-align: center;
+    
+    text-align:center;
     margin-bottom: 20px;
 }
 
