@@ -10,20 +10,19 @@
             </div>
         </div>
 
+        
         <ul class="nav nav-tabs">
             <li class="nav-item dropdown" (click)="toggleDropdown()">
                 <a class="nav-link dropdown-toggle" href="" role="button" aria-expanded="false">Museus</a>
                 
-                @if(dropdown){
-                    <ul class="dropdown-menu" @if(dropdown)>
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Separated link</a></li>
-                      </ul>  
-                }
-                
+                <select class="form-select selecionar">
+                    <option selected>Museus</option>
+                    <option value="1">Memorial de Guerra Australiano</option>
+                    <option value="2">Museu de Melbourne</option>
+                    <option value="3">Art Gallery of New South Wales</option>
+                    <option value="4">Museu Marítimo Nacional Australiano</option>
+                  </select>
+
               </li>
             <li class="nav-item">
               <a class="nav-link" href="">Home</a>

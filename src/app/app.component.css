@@ -19,3 +19,9 @@
 .descricao {
     font-size: 14px;
 }
+
+.selecionar {
+    display: block;
+    background-color: transparent;
+    border: 0px;
+}
