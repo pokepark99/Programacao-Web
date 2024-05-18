@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-inicial',
+  selector: 'app-south-wales',
   standalone: true,
   imports: [],
-  templateUrl: './inicial.component.html',
-  styleUrl: './inicial.component.css'
+  templateUrl: './south-wales.component.html',
+  styleUrl: './south-wales.component.css'
 })
-export class InicialComponent {
+export class SouthWalesComponent {
 
   traduzirPagina(){
     // codigo para traduzir pag
@@ -24,5 +24,4 @@ export class InicialComponent {
     //codigo para login
     alert("Login");
   }
-
 }

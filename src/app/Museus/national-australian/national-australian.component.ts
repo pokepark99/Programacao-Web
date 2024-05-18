@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-inicial',
+  selector: 'app-national-australian',
   standalone: true,
   imports: [],
-  templateUrl: './inicial.component.html',
-  styleUrl: './inicial.component.css'
+  templateUrl: './national-australian.component.html',
+  styleUrl: './national-australian.component.css'
 })
-export class InicialComponent {
+export class NationalAustralianComponent {
 
   traduzirPagina(){
     // codigo para traduzir pag
@@ -24,5 +24,4 @@ export class InicialComponent {
     //codigo para login
     alert("Login");
   }
-
 }
