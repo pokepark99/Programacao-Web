@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-header',
+  selector: 'app-inicial',
   standalone: true,
   imports: [],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  templateUrl: './inicial.component.html',
+  styleUrl: './inicial.component.css'
 })
-export class HeaderComponent {
+export class InicialComponent {
 
   traduzirPagina(){
     // codigo para traduzir pag
@@ -24,5 +24,4 @@ export class HeaderComponent {
     //codigo para login
     alert("Login");
   }
-
 }

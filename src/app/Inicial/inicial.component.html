@@ -1,3 +1,53 @@
+<!--HEADER-->
+<header class="header">
+    <div class="row">
+        <div class="col-9 d-flex justify-content-between align-items-center">
+            <button class="btn btn-primary" (click)="traduzirPagina()">Traduzir para ingles</button>
+        </div>
+        <div class="col-3 d-flex justify-content-end">
+            <button class="btn btn-primary autenticacao" (click)="SignUp()">Sign Up</button>
+            <button class="btn btn-primary autenticacao" (click)="Login()">Login</button>
+            &nbsp;
+        </div>
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="col-9">
+            <ul class="nav nav-tabs">
+                <li class="nav-item dropdown">
+                    <select class="form-select selecionar">
+                        <option selected>Museus</option>
+                        <option value="1">Memorial de Guerra Australiano</option>
+                        <option value="2">Museu de Melbourne</option>
+                        <option value="3">Art Gallery of New South Wales</option>
+                        <option value="4">Museu Marítimo Nacional Australiano</option>
+                    </select>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Contactos</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-3 d-flex justify-content-end">
+            <div class="input-group" style="width: 300px;">
+                <input type="text" class="form-control" placeholder="Search">
+                <div class="input-group-append">
+                    <button class="btn btn-dark" type="button"><img src="../assets/images/search.png" width="20px"></button>
+                </div>
+                &nbsp;
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--CORPO-->
 <br>
 
 <h1>CATALOGO</h1>
@@ -101,3 +151,8 @@
         </div>
     </div>
 </main>
+
+<!--FOOTER-->
+<footer>
+    <p align = "right">&copy; 2024 NOME</p>
+</footer>
