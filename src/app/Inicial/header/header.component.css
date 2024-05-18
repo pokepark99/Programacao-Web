@@ -1,0 +1,26 @@
+html {
+    background-color: rgb(207, 206, 241);
+}
+
+.header {
+    background-color: rgb(207, 206, 241);
+}
+
+.selecionar {
+    display: block;
+    background-color: transparent;
+    border-width: 1px;
+    color: #007bff;
+    cursor: pointer;
+    border-color: transparent;
+}
+
+.selecionar:hover {
+    color: #0056b3; 
+    border-color: #fff;
+}
+
+.autenticacao {
+    margin-right: 10px;
+    margin-left: 10px;
+}
