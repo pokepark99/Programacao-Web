@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
-import { GuerraAustralianoComponent } from './guerra-australiano/guerra-australiano.component';
+import { GerraAustraliaComponent } from './Museus/gerra-australia/gerra-australia.component';
+
 
 export const routes: Routes = [
-    {path: 'guerraAustralia', component: GuerraAustralianoComponent}
+    {path: 'guerraAustralia', component: GerraAustraliaComponent}
 ];
