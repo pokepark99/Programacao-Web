@@ -29,6 +29,7 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ],
             "server": "src/main.server.ts",
@@ -99,5 +100,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "14cefba0-2151-4000-b330-6475f1c2f5a4"
   }
 }
