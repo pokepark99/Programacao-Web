@@ -9,3 +9,70 @@ h1 {
 h2 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+/* Estilos para o carrossel e miniaturas */
+.carousel {
+    max-width: 800px; /* Defina uma largura máxima para o carrossel */
+    margin: 0 auto; /* Centralize horizontalmente o carrossel */
+}
+
+.carousel-image {
+    max-height: 400px; /* Defina a altura máxima para as imagens no carrossel */
+    width: auto; /* Permita que a largura das imagens seja ajustada automaticamente */
+    margin: 0 auto; /* Centralize horizontalmente as imagens no carrossel */
+    object-fit: contain; /* Ajuste a imagem mantendo a proporção */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto; /* Defina a largura para automático para que as setas ocupem apenas o espaço necessário */
+    margin-left: 0; /* Reduza a margem esquerda */
+    margin-right: 0; /* Reduza a margem direita */
+    background-color: transparent; /* Remova o fundo */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black; /* Altere a cor das setas */
+}
+
+.carousel-control-prev {
+    left: -30px; /* Ajuste a posição da seta "prev" */
+}
+
+.carousel-control-next {
+    right: -30px; /* Ajuste a posição da seta "next" */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Adicione uma transparência ao passar o mouse */
+}
+
+.thumbnails-container {
+    text-align: center; /* Centralize as miniaturas horizontalmente */
+    white-space: nowrap; /* Impede que as miniaturas quebrem para a linha seguinte */
+    overflow-x: auto; /* Adiciona uma barra de rolagem horizontal caso as miniaturas excedam a largura do container */
+}
+
+.thumbnail {
+    cursor: pointer;
+    height: 80px; /* Reduza a altura das miniaturas */
+    object-fit: cover;
+    margin-right: 5px; /* Reduza o espaço entre as miniaturas */
+    display: inline-block; /* Faça as miniaturas ficarem lado a lado */
+}
+
+.thumbnail:last-child {
+    margin-right: 0; /* Remova a margem direita da última miniatura */
+}
+
+.thumbnail:hover {
+    opacity: 0.7;
+}
+
+/* Limitar a altura da imagem principal do carrossel */
+.carousel-item {
+    max-height: 400px; /* Ajuste conforme necessário */
+    overflow: hidden;
+}
