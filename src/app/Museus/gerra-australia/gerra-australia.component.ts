@@ -1,52 +1,63 @@
 import { Component, OnInit } from '@angular/core';
 
-interface Avaliacao {
-  estrelas: number;
-  nome: string;
-  comentario: string;
-  epoca: string;
-  tipoVisita: string;
-}
+// interface Avaliacao {
+//   estrelas: number;
+//   nome: string;
+//   comentario: string;
+//   epoca: string;
+//   tipoVisita: string;
+// }
 
 @Component({
   selector: 'app-gerra-australia',
+  standalone: true,
+  imports: [],
   templateUrl: './gerra-australia.component.html',
-  styleUrls: ['./gerra-australia.component.css']
+  styleUrl: './gerra-australia.component.css'
 })
-export class GerraAustraliaComponent implements OnInit {
-  avaliacoes: Avaliacao[] = [
-    // Exemplo de avaliações
-    { estrelas: 5, nome: 'João', comentario: 'Excelente!', epoca: 'Janeiro', tipoVisita: 'família' },
-    { estrelas: 4, nome: 'Maria', comentario: 'Muito bom!', epoca: 'Fevereiro', tipoVisita: 'casais' },
-    // Adicione mais avaliações conforme necessário
-  ];
 
-  filtroClassificacao: number = 0;
-  filtroEpoca: string = '';
-  filtroTipoVisita: string = '';
+// @Component({
+//   selector: 'app-gerra-australia',
+//   templateUrl: './gerra-australia.component.html',
+//   styleUrls: ['./gerra-australia.component.css']
+// })
 
-  avaliacoesFiltradas: Avaliacao[] = [];
+// export class GerraAustraliaComponent implements OnInit {
+//   avaliacoes: Avaliacao[] = [
+//     // Exemplo de avaliações
+//     { estrelas: 5, nome: 'João', comentario: 'Excelente!', epoca: 'Janeiro', tipoVisita: 'família' },
+//     { estrelas: 4, nome: 'Maria', comentario: 'Muito bom!', epoca: 'Fevereiro', tipoVisita: 'casais' },
+//     // Adicione mais avaliações conforme necessário
+//   ];
 
-  constructor() { }
+//   filtroClassificacao: number = 0;
+//   filtroEpoca: string = '';
+//   filtroTipoVisita: string = '';
 
-  ngOnInit(): void {
-    this.avaliacoesFiltradas = this.avaliacoes;
-  }
+//   avaliacoesFiltradas: Avaliacao[] = [];
 
-  reporFiltros(): void {
-    this.filtroClassificacao = 0;
-    this.filtroEpoca = '';
-    this.filtroTipoVisita = '';
-    this.avaliacoesFiltradas = this.avaliacoes;
-  }
+//   constructor() { }
 
-  aplicarFiltros(): void {
-    this.avaliacoesFiltradas = this.avaliacoes.filter(avaliacao => {
-      return (
-        (this.filtroClassificacao === 0 || avaliacao.estrelas === this.filtroClassificacao) &&
-        (this.filtroEpoca === '' || avaliacao.epoca === this.filtroEpoca) &&
-        (this.filtroTipoVisita === '' || avaliacao.tipoVisita === this.filtroTipoVisita)
-      );
-    });
-  }
-}
+//   ngOnInit(): void {
+//     this.avaliacoesFiltradas = this.avaliacoes;
+//   }
+
+//   reporFiltros(): void {
+//     this.filtroClassificacao = 0;
+//     this.filtroEpoca = '';
+//     this.filtroTipoVisita = '';
+//     this.avaliacoesFiltradas = this.avaliacoes;
+//   }
+
+//   aplicarFiltros(): void {
+//     this.avaliacoesFiltradas = this.avaliacoes.filter(avaliacao => {
+//       return (
+//         (this.filtroClassificacao === 0 || avaliacao.estrelas === this.filtroClassificacao) &&
+//         (this.filtroEpoca === '' || avaliacao.epoca === this.filtroEpoca) &&
+//         (this.filtroTipoVisita === '' || avaliacao.tipoVisita === this.filtroTipoVisita)
+//       );
+//     });
+//   }
+// }
+
+export class GerraAustraliaComponent {}
