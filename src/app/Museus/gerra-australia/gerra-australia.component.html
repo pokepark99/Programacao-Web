@@ -111,34 +111,20 @@
   </div>
 </div>
 
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
 <!-- Seção da localização -->
 <div class="row mt-5">
   <div class="col-md-6">
     <h2>Localização:</h2>
-    <p>Rua blabla</p>
-    <!-- Mapa do Google -->
-<div id="map" style="height: 400px; width: 100%;"></div>
-<script>
-  function initMap() {
-    // Coordenadas do local
-    var location = {lat: -27.473179, lng: 153.029639};
-    // Criar o mapa
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 15,
-      center: location
-    });
-    // Adicionar um marcador no local
-    var marker = new google.maps.Marker({
-      position: location,
-      map: map
-    });
-  }
-</script>
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
-</script>
+    <p>Treloar Crescent Campbell, Canberra 2612 Austrália</p>
   </div>
 </div>
+
+<!-- Mapa do OpenStreetMap em um quadrado menor -->
+<iframe width="400" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=149.1467,-35.3155,149.1577,-35.3074&amp;layer=mapnik&amp;marker=-35.3115,149.1522" style="border: 1px solid black; aspect-ratio: 1;"></iframe>
 
 <!-- Seção de contatos -->
 <div class="row mt-5">
