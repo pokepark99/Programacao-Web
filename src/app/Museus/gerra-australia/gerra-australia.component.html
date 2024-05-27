@@ -135,14 +135,69 @@
   </div>
 </div>
 
-<!-- Seção de avaliações -->
-<div class="row mt-5">
-  <div class="col-md-6">
-    <h2>Avaliações</h2>
-    <!-- Seletor de 5 estrelas aqui -->
-    <!-- Avaliações dadas aqui -->
+<div class="avaliacoes">
+  <h2>Avaliações</h2>
+  <button class="btn btn-primary" data-toggle="modal" data-target="#filtrosModal">Filtros</button>
+  <div class="modal fade" id="filtrosModal" tabindex="-1" role="dialog" aria-labelledby="filtrosModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="filtrosModalLabel">Filtros</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="classificacao">Classificação dos Viajantes:</label>
+            <select class="form-control" id="classificacao" [(ngModel)]="filtroClassificacao">
+              <option value="0">Todas</option>
+              <option value="1">1 estrela</option>
+              <option value="2">2 estrelas</option>
+              <option value="3">3 estrelas</option>
+              <option value="4">4 estrelas</option>
+              <option value="5">5 estrelas</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="epoca">Época do Ano:</label>
+            <select class="form-control" id="epoca" [(ngModel)]="filtroEpoca">
+              <option value="">Todas</option>
+              <option value="Janeiro">Janeiro</option>
+              <option value="Fevereiro">Fevereiro</option>
+              <!-- Outras opções para os 12 meses -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="tipoVisita">Tipo de Visita:</label>
+            <select class="form-control" id="tipoVisita" [(ngModel)]="filtroTipoVisita">
+              <option value="">Todos</option>
+              <option value="negocios">Negócios</option>
+              <option value="casais">Casais</option>
+              <option value="familia">Família</option>
+              <option value="amigos">Amigos</option>
+              <option value="sozinho">Sozinho</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" (click)="reporFiltros()">Repor Filtros</button>
+          <button type="button" class="btn btn-primary" (click)="aplicarFiltros()">Aplicar Filtros</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="avaliacoes-container">
+    <div class="avaliacao" *ngFor="let avaliacao of avaliacoesFiltradas">
+      <span>{{ avaliacao.estrelas }} estrelas</span>
+      <p><strong>{{ avaliacao.nome }}</strong></p>
+      <p>{{ avaliacao.comentario }}</p>
+    </div>
   </div>
 </div>
+
+
 
 <br>
 <br>

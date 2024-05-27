@@ -77,3 +77,21 @@ h2 {
     overflow: hidden;
 }
 
+#avaliacoes-container {
+    max-height: 400px; /* Defina a altura máxima conforme necessário */
+    overflow-y: scroll;
+    border: 1px solid #ccc; /* Opcional */
+    padding: 10px; /* Opcional */
+  }
+  
+  .avaliacao {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc; /* Opcional */
+    padding-bottom: 10px; /* Opcional */
+  }
+  
+  .modal .form-group {
+    margin-bottom: 15px;
+  }
+  
+
