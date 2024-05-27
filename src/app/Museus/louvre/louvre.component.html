@@ -58,45 +58,156 @@
         todas as idades e origens.
     </p>
 
-    <hr>
+  <div class="row">
+    <div class="col-md-6">
+      <!-- Carousel wrapper -->
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="5000">
+        <!-- Slides -->
+        <div class="carousel-inner mb-5 shadow-1-strong rounded-3">
+          <div class="carousel-item active">
+            <img src="assets/images/Australian War Memorial/Aircraft Hall.jpg" class="d-block w-100" alt="Aircraft Hall" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/Australian War Memorial/Gallipoli battle zone.webp" class="d-block w-100" alt="Gallipoli battle zone" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/Australian War Memorial/Uniforms WW1.jpg" class="d-block w-100" alt="Uniforms WWI" />
+          </div>
+        </div>
+        <!-- Slides -->
 
-    <h2>Galeria de fotos</h2>
-    
-    <hr>
+        <!-- Controls -->
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+        <!-- Controls -->
 
-    <h2>Mapa</h2>
+        <!-- Thumbnails -->
+        <div class="carousel-indicators" style="margin-bottom: -20px;">
+          <button type="button" data-target="#carouselExampleControls" data-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1" style="width: 100px;">
+            <img class="d-block w-100 shadow-1-strong rounded"
+              src="assets/images/Australian War Memorial/Aircraft Hall.jpg" class="img-fluid" alt="Aircraft Hall" />
+          </button>
+          <button type="button" data-target="#carouselExampleControls" data-slide-to="1" aria-label="Slide 2"
+            style="width: 100px;">
+            <img class="d-block w-100 shadow-1-strong rounded"
+              src="assets/images/Australian War Memorial/Gallipoli battle zone.webp" class="img-fluid" alt="Gallipoli battle zone" />
+          </button>
+          <button type="button" data-target="#carouselExampleControls" data-slide-to="2" aria-label="Slide 3"
+            style="width: 100px;">
+            <img class="d-block w-100 shadow-1-strong rounded"
+              src="assets/images/Australian War Memorial/Uniforms WW1.jpg" class="img-fluid" alt="Uniforms WWI" />
+          </button>
+        </div>
+        <!-- Thumbnails -->
+      </div>
+    </div>
 
-    <hr>
+  <div class="col-md-6">
+    <!-- Caixa de informações à direita -->
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Informações:</h5>
+        <p>Duração: 2/3 Horas</p>
+        <hr>
+        <p>Bilhetes desde <span id="ticketPrice">...</span>€</p>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ticketModal">Ver Bilhetes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End row -->
 
-    <h2>Eventos</h2>
+<!-- Modal para mostrar os bilhetes -->
+<div class="modal fade" id="ticketModal" tabindex="-1" role="dialog" aria-labelledby="ticketModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ticketModalLabel">Preçário de Bilhetes</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Bilhete c/guia 2€</p>
+        <p>Bilhete normal 3€</p>
+      </div>
+      <div class="modal-footer">
+        <a href="https://www.google.com" class="btn btn-primary">Comprar (site oficial)</a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <hr>
+<!-- Seção do catálogo de obras -->
+<div class="row mt-5">
+  <div class="col-md-6">
+    <h2>Catálogo obras Museu (top 3 obras mais procuradas):</h2>
+    <p><strong>Obra 1:</strong> Autor 1 - Data</p>
+    <p><strong>Obra 2:</strong> Autor 2 - Data</p>
+    <p><strong>Obra 3:</strong> Autor 3 - Data</p>
+  </div>
+</div>
 
-    <h2>Compra de Bilhetes</h2>
 
-    <hr>
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
+<!-- Seção da localização -->
+<div class="row mt-5">
+  <div class="col-md-6">
+    <h2>Localização:</h2>
+    <p>Treloar Crescent Campbell, Canberra 2612 Austrália</p>
+  </div>
+</div>
+
+<!-- Mapa do OpenStreetMap em um quadrado menor -->
+<iframe width="400" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=2.3356,48.8619,2.3378,48.8639&amp;layer=mapnik&amp;marker=48.8629,2.3367"  style="border: 1px solid black; aspect-ratio: 1;"></iframe>
+
+<!-- Seção de contatos -->
+<div class="row mt-5">
+  <div class="col-md-6">
+    <h2>Contactos:</h2>
+    <p>Visite o site: <a href="#">link</a></p>
+    <p>Telefone: (xx) xxx xxxx</p>
+  </div>
+</div>
+
+<!-- Seção de avaliações -->
+<div class="row mt-5">
+  <div class="col-md-6">
     <h2>Avaliações</h2>
+    <!-- Seletor de 5 estrelas aqui -->
+    <!-- Avaliações dadas aqui -->
+  </div>
+</div>
 
-    <hr>
+<br>
+<br>
 
-    <h2>Catálogo de obras</h2>
+<h2>Mapa</h2>
 
-    <hr>
+<h2>Eventos</h2>
 
-    <h2>Fotos</h2>
+<h2>Compra de Bilhetes</h2>
 
-    <hr>
+<h2>Avaliações</h2>
 
-    <h2>Audio</h2>
+<h2>Catálogo de obras</h2>
 
-    <hr>
+<h2>Fotos</h2>
 
-    <h2>Eventos</h2>
+<h2>Audio</h2>
 
-    <hr>
+<h2>Eventos</h2>
 
-
-    <br>
-    No footer: Autores, Data, Categoria(?)
+<br>
+No footer: Autores, Data, Categoria(?)
 </div>
