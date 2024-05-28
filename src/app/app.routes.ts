@@ -5,6 +5,7 @@ import { FieldComponent } from './Museus/field/field.component';
 import { NationalAustralianComponent } from './Museus/national-australian/national-australian.component';
 import { LouvreComponent } from './Museus/louvre/louvre.component';
 import { XangaiComponent } from './Museus/xangai/xangai.component';
+import { AboutComponent } from './about/about.component';
 
 export const routes: Routes = [
     {path: '', component: InicialComponent},
@@ -12,5 +13,6 @@ export const routes: Routes = [
     {path: 'field', component: FieldComponent},
     {path: 'xangai', component: XangaiComponent},
     {path: 'nationalAustralian', component: NationalAustralianComponent},
-    {path: 'louvre', component: LouvreComponent}
+    {path: 'louvre', component: LouvreComponent},
+    {path: 'about', component: AboutComponent}
 ];
