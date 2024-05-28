@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SouthWalesComponent } from './south-wales.component';
+import { FieldComponent } from './field.component';
 
-describe('SouthWalesComponent', () => {
-  let component: SouthWalesComponent;
-  let fixture: ComponentFixture<SouthWalesComponent>;
+describe('FieldComponent', () => {
+  let component: FieldComponent;
+  let fixture: ComponentFixture<FieldComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SouthWalesComponent]
+      imports: [FieldComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(SouthWalesComponent);
+    fixture = TestBed.createComponent(FieldComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
