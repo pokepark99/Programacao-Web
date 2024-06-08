@@ -1,3 +1,7 @@
+
+
+   
+
 <!--CORPO-->
 <div class="container-fluid">
 <h1>Memorial de Guerra Australiano</h1>
@@ -18,7 +22,7 @@
     <div class="status">
       <span>{{ statusText }}</span>
       <!-- Botão para abrir o modal -->
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#horariomodal">Ver horários</button>
+      <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#horariomodal">Ver horários</button>
     </div>
     <!-- Modal Horário-->
     <div class="modal fade" id="horariomodal" tabindex="-1" role="dialog" aria-labelledby="horariomodalLabel" aria-hidden="true">
@@ -26,18 +30,18 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="horariomodalLabel">Horário</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <p> <strong>Segunda-feira</strong> 10:00 - 17:00</p>
-            <p> <strong>Terça-feira</strong> 10:00 - 17:00</p>
-            <p> <strong>Quarta-feira</strong> 10:00 - 17:00</p>
-            <p> <strong>Quinta-feira</strong> 10:00 - 17:00</p>
-            <p> <strong>Sexta-feira</strong> 10:00 - 17:00</p>
+            <p> <strong>Segunda-feira</strong> 08:00 - 19:00</p>
+            <p> <strong>Terça-feira</strong> 08:00 - 19:00</p>
+            <p> <strong>Quarta-feira</strong> 08:00 - 19:00</p>
+            <p> <strong>Quinta-feira</strong> 08:00 - 19:00</p>
+            <p> <strong>Sexta-feira</strong> 08:00 - 19:00</p>
             <p> <strong>Sábado</strong> 10:00 - 17:00</p>
-            <p> <strong>Domingo</strong> 10:00 - 17:00</p>
+            <p> <strong>Domingo</strong> 11:00 - 16:00</p>
           </div>
         </div>
       </div>
@@ -104,11 +108,13 @@
           <!-- Caixa de informações à direita -->
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Informações:</h5>
-              <p>Duração: 2/3 Horas</p>
+              <h5 class="card-title">Sobre este Memorial </h5>
+              <p>Duração 4 horas</p>
+              <p>Guia de áudio opcional</p>
               <hr>
-              <p>Bilhetes desde <span id="ticketPrice">...</span>€</p>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ticketModal">Ver Bilhetes</button>
+              <h5 class="card-title">Bilhetes</h5> <br>
+              <button type="button" class="btn btn-custom2" data-toggle="modal" data-target="#ticketModal">Ver Bilhetes</button>
+             
             </div>
           </div>
         </div>
@@ -128,8 +134,9 @@
         </button>
       </div>
       <div class="modal-body">
-        <p>Bilhete c/guia 2€</p>
-        <p>Bilhete normal 3€</p>
+        <p>Bilhete c/guia 17€</p>
+        <p>Bilhete normal 11€</p>
+        <p>Bilhete c/áudio (inglês) 24€</p>
       </div>
       <div class="modal-footer">
         <a href="https://www.awm.gov.au/visit" class="btn btn-primary">Comprar (site oficial)</a>
@@ -196,16 +203,14 @@
 </p>
 
   <br>
-  <h2>Catálogo de obras</h2>
-
 <!-- Seção do catálogo de obras -->
 <div class="row mt-5">
   <div class="col-md-6">
     <h2>Obras mais procuradas</h2>
     <p><strong>The Roll of Honour</strong> Autor 1 - Data - Uma parede que lista os nomes de todos os australianos que morreram em serviço militar desde 1885.
       Este é um local de profundo significado para os visitantes que desejam prestar homenagem aos soldados caídos.</p>
-    <p><strong>Obra 2:</strong> Autor 2 - Data-Embora não seja uma obra de arte física, esta cerimônia diária é uma experiência emocionante e reverente, onde os visitantes podem testemunhar a leitura dos nomes dos soldados australianos falecidos e ouvir a trombeta tocando o "Último Posto".</p>
-    <p><strong>Obra 3:</strong> Autor 3 - Data</p>
+    <p><strong>The Last Post Ceremony</strong> Autor 2 - Data-Embora não seja uma obra de arte física, esta cerimônia diária é uma experiência emocionante e reverente, onde os visitantes podem testemunhar a leitura dos nomes dos soldados australianos falecidos e ouvir a trombeta tocando o "Último Posto".</p>
+    <p><strong>Hall of Memory</strong> Autor 3 - Data - Esta sala central abriga o Memorial da Guerra Australiana e é adornada com mosaicos, estátuas e vitrais que representam os serviços militares e as campanhas nas quais os australianos estiveram envolvidos.</p>
   </div>
 </div>
 
@@ -218,12 +223,27 @@
 <div class="row mt-5">
   <div class="col-md-6">
     <h2>Localização:</h2>
-    <p>Treloar Crescent Campbell, Canberra 2612 Austrália</p>
+    <p>Treloar Crescent </p>
+    <p>Campbell ACT 2612</p>
+    <p>Australia</p>
   </div>
 </div>
-
+<div class="container-fluid">
+  <div class="row contact-map-container mt-5">
+      <div class="col-md-6 map">
+          <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=149.14843,-35.279,149.14843,-35.283&amp;layer=mapnik&amp;marker=-35.281030400967666,149.1484327" style="border: 1px solid black;"></iframe>
+      </div>
+      <div class="col-md-6 contacts">
+          <h2>Contactos:</h2>
+          <p>Questões Gerais: info&#64;awm.gov.au</p>
+          <p>Telefone: +61 (02) 6243 4211</p>
+          <p>Visite o site: <a href="https://www.awm.gov.au/">link</a></p>
+      </div>
+  </div>
+</div>
 <!-- Mapa do OpenStreetMap em um quadrado menor -->
-<iframe width="400" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=149.14843,-35.279,149.14843,-35.283&amp;layer=mapnik&amp;marker=-35.281030400967666, 149.1484327" style="border: 1px solid black; aspect-ratio: 1;"></iframe>
+
+<!-- Seção de contatos -->
 
 
 <br>
@@ -290,20 +310,10 @@
   </div>
 
 
-  <button type="button" class="btn btn-primary">Inserir Avaliacao</button>
+  <button type="button" class="btn-custom3">Inserir Avaliação</button>
 </div>
-
 <br>
-<!-- Seção de contatos -->
-<div class="row mt-5">
-  <div class="col-md-6">
-    <h2>Contactos:</h2>
-    <p>Questoes Gerais: info&#64;awm.gov.au</p>
-    <p>Telefone: +61 (02) 6243 4211</p>
-    <p>Telefone fax.: +61 (02) 6243 4325</p>
-    <p>Visite o site: <a href="https://www.awm.gov.au/">link</a></p>
-  </div>
-</div>
+<br><br><br>
 
 
 </div>
