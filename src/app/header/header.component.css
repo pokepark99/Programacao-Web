@@ -13,11 +13,11 @@
     font-style: normal;
 }
 .header {
-    background-image: url('/assets/images/w5.png');
+    background-image: url('/assets/images/w6-3.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 500px;
+    height: 600px;
     color: white;
     padding: 0;
     margin: 0;
@@ -37,6 +37,7 @@
     font-family:Isolde-SmallCaps-Regular;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     font-size: 80px;
+    color:#070707;
 }
 .english{
     background-color: transparent;
@@ -47,15 +48,15 @@
 .autenticacao{
     background-color: transparent;
     border-color: transparent;
-    color: rgb(10, 10, 10);
-
+    color: #000000;
 }
 .autenticacao i {
     font-size: 2em; /* Aumenta o tamanho do ícone */
 }
 .nav-link {
     border: none;
-    color: white;
+    color: #af7e84;
+    font-size: 20px;
 }
 .row {
     width: 100%;
@@ -73,12 +74,13 @@
 .nav-container {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 20px; /* Adiciona padding para melhor espaçamento */
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 10px; /* Adiciona padding para melhor espaçamento */
     position: absolute;
-    bottom: 0;
+   
     left: 0;
+    top:0;
 }
 .search-container {
     width: 100%;
@@ -87,7 +89,7 @@
     padding: 10px 20px;
 }
 .header .nav-item {
-    margin-right: 50px; /* Adiciona espaçamento entre os itens de navegação */
+    margin-right: 40px; /* Adiciona espaçamento entre os itens de navegação */
 }
 
 

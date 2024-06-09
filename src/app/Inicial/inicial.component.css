@@ -8,18 +8,15 @@
 }
 :host {
     display: block;
-    background-color: #F5F5DC;
+    background-color: #9c6a72;
     text-align: center;
 }
-
-.h1{
-    
-    text-align: center;
-  
+.titulo-catalogo{
+    color:#542A2F ;
 }
 
 .amostra {
-    background-color: #A0522D;
+    background-color: #E7E2D4;
     padding: 10px;   
 }
 
@@ -52,7 +49,7 @@
     opacity: 1;
     max-height: 500px;
     transition: max-height 0.5s ease, opacity 0.5s ease;
-    background-color: rgb(207, 206, 241);
+    background-color: #E7E2D4;
     
 }
 
