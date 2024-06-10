@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0; /* Cor sólida de fundo */
+    background-color: #9c6a72; /* Cor sólida de fundo */
 }
 
 .main-04 {
@@ -28,19 +28,23 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-
 .iconDiv-04 {
     cursor: pointer;
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #011c25;
-    background-repeat: no-repeat;
-    background-attachment: cover;
-    background-position: 50% 58%;
+    background-color: #EADACD; /* Cor sólida */
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    overflow: hidden; /* Garante que a imagem não ultrapasse as bordas arredondadas */
+}
+
+.icon-04 {
+    width: 100%; /* Ajuste a largura para ocupar todo o espaço disponível */
+    height: 100%; /* Ajuste a altura para ocupar todo o espaço disponível */
+    object-fit: contain; /* Mantém a proporção da imagem */
+    padding: 10%; /* Adiciona padding para dar um espaçamento interno */
 }
 
 .input-box-04 {
