@@ -6,10 +6,11 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { InicialComponent } from './Inicial/inicial.component';
 import { GerraAustraliaComponent } from './Museus/gerra-australia/gerra-australia.component';
-import { MelbourneComponent } from './Museus/melbourne/melbourne.component';
-import { SouthWalesComponent } from './Museus/south-wales/south-wales.component';
+//import { MelbourneComponent } from './Museus/melbourne/melbourne.component';
+//import { SouthWalesComponent } from './Museus/south-wales/south-wales.component';
 import { NationalAustralianComponent } from './Museus/national-australian/national-australian.component';
 import { LouvreComponent } from './Museus/louvre/louvre.component';
+import { LoginComponent } from './login/login.component';
 import { routes } from './app.routes';
 
 @NgModule({
@@ -17,11 +18,13 @@ import { routes } from './app.routes';
     AppComponent,
     InicialComponent,
     GerraAustraliaComponent,
-    MelbourneComponent,
-    SouthWalesComponent,
+    //MelbourneComponent,
+   // SouthWalesComponent,
     NationalAustralianComponent,
-    LouvreComponent
+    LouvreComponent,
+    LoginComponent
   ],
+
   imports: [
     BrowserModule,
     FormsModule,
