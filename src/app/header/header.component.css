@@ -1,17 +1,10 @@
-/*HEADER*/
-
-/*#5934c8
-.header {
-    background-color: rgb(207, 206, 241);
-    padding: 5px;
-    padding-top: 10px;
-}*/
-@font-face{
+@font-face {
     font-family: Isolde-SmallCaps-Regular;
-    src:url('/assets/fonts/Isolde-SmallCaps-Regular.ttf') format('ttf');
+    src: url('/assets/fonts/Isolde-SmallCaps-Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
+
 .header {
     background-image: url('/assets/images/w6-3.png');
     background-size: cover;
@@ -27,22 +20,47 @@
     align-items: flex-start;
     font-family: Isolde-SmallCaps-Regular;
     position: relative;
-   
+    z-index: 1;
 }
 
-.header h1{
+.header h1 {
     margin: 0;
     padding: 20px;
     text-align: left;
-    font-family:Isolde-SmallCaps-Regular;
+    font-family: Isolde-SmallCaps-Regular;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     font-size: 80px;
-    color:#070707;
+    color: #070707;
 }
-.english {
-    background-color: transparent;
-    border-color: transparent;
-    color: rgb(208, 204, 204);
+
+.translate-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2; /* Garante que os botões fiquem no topo */
+}
+
+.translate-en, .translate-pt {
+    width: 50px;
+    height: 30px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0 5px; /* Espaço entre os botões */
+}
+
+.translate-en {
+    background-image: url('../../assets/flags/ingles.png');
+}
+
+.translate-pt {
+    background-image: url('../../assets/flags/portugal.png');
 }
 
 .autenticacao {
@@ -50,19 +68,18 @@
     border-color: transparent;
     color: #000000;
     margin-left: 10px; /* Adiciona espaço entre os botões */
-    
 }
 
 .autenticacao i {
     font-size: 2em; /* Aumenta o tamanho do ícone */
 }
 
-
 .nav-link {
     border: none;
     color: #af7e84;
     font-size: 20px;
 }
+
 .row {
     width: 100%;
     margin: 0;
@@ -76,6 +93,7 @@
     padding-bottom: 0;
     justify-content: flex-end; /* Alinha os itens à esquerda */
 }
+
 .nav-container {
     width: 100%;
     display: flex;
@@ -83,24 +101,25 @@
     align-items: center;
     padding: 10px 10px; /* Adiciona padding para melhor espaçamento */
     position: absolute;
-   
     left: 0;
-    top:0;
-}.nav-container i {
+    top: 0;
+}
+
+.nav-container i {
     font-size: 1.5em; /* Aumenta o tamanho do ícone */
     color: #000000;
 }
+
 .search-container {
     width: 100%;
     display: flex;
     justify-content: flex-end; /* Alinha o campo de busca à direita */
     padding: 10px 20px;
 }
+
 .header .nav-item {
     margin-right: 40px; /* Adiciona espaçamento entre os itens de navegação */
 }
-
-
 
 .selecionar {
     display: block;
@@ -115,4 +134,3 @@
     color: #0056b3; 
     border-color: #fff;
 }
-

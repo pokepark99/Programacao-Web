@@ -1,43 +1,37 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<!--HEADER
-
--->
 <header class="header">
-
-    <a><button class="poppins-regular button-04" (click)="traduzirPagina()">Inglês</button>
-    </a>
-    
-
-
-    <div class="row">
-
-        <h1>MuseHub</h1>
-
-        <div class="nav-container">
-            <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a class="nav-link" href="">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">Contactos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login"> <i class="fas fa-user"></i></a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="search-container">
-            <div class="input-group" style="width: 300px;">
-                <input type="text" class="form-control" placeholder="Search">
-                <button class="btn btn-dark" type="button">
-                    <img src="../assets/images/search.png" width="20px">
-                </button>
-
-            </div>
-        </div>
+    <div class="translate-container">
+      <button class="translate-pt" (click)="traduzirPagina('pt')"></button>
+      <button class="translate-en" (click)="traduzirPagina('en')"></button>
     </div>
-</header>
+  
+    <div class="row">
+      <h1 style="margin: 0; position: absolute; bottom: 10px; left: 10px; font-size: 80px;">MuseHub</h1>
+  
+      <div class="nav-container">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link" href="">{{ 'HOME' | translate }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about">{{ 'ABOUT' | translate }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">{{ 'CONTACTS' | translate }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login"> <i class="fas fa-user"></i></a>
+          </li>
+        </ul>
+      </div>
+  
+      <div style="position: absolute; bottom: 10px; right: 10px;" class="search-container">
+        <div class="input-group" style="width: 300px;">
+        <input type="text" class="form-control" [placeholder]="searchPlaceholder">
+          <button class="btn btn-dark" type="button">
+            <img src="../assets/images/search.png" width="20px">
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  
