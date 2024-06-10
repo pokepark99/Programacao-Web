@@ -16,5 +16,5 @@ export const routes: Routes = [
     {path: 'nationalAustralian', component: NationalAustralianComponent},
     {path: 'louvre', component: LouvreComponent},
     {path: 'about', component: AboutComponent},
-    { path: 'login', component: LoginComponent }
+    {path: 'login', component: LoginComponent}
 ];
