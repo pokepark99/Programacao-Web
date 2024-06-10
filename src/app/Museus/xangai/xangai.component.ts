@@ -56,4 +56,24 @@ export class XangaiComponent {
   anoFinal: number = 2030;
   years: number[] = Array.from({ length: this.anoFinal - this.anoInicio + 1 }, (_, i) => this.anoInicio + i);
 
+  rating:number = 0;
+
+  rate(rating:number) {
+    // camimhos para as estrelas
+    const filledStar = 'assets/images/StarFilled.png';
+    const blankStar = 'assets/images/StarBlank.png';
+    
+    for (let i = 1; i <= 5; i++) {
+      const star = document.getElementById(`star${i}`);
+      //se a img existe
+      if (star) {
+        if (i <= rating) {
+          star.innerHTML = filledStar;
+        } else {
+          star.innerHTML = blankStar;
+        }
+      }
+    }
+  }
+  
 }
