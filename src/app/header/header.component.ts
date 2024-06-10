@@ -16,13 +16,4 @@ export class HeaderComponent {
     alert('Page will be translated to English');
   }
   
-  SignUp(){
-    //codigo para sign up
-    alert("Sign up");
-  }
-
-  Login(){
-    //codigo para login
-    alert("Login");
-  }
 }
