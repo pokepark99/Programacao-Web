@@ -3,42 +3,12 @@
   <h1>Museu do Louvre</h1>
   <h3>Arte</h3>
 
-  <img class="star" src="assets/images/StarFilled.png" alt="Star">
-  <img class="star" src="assets/images/StarFilled.png" alt="Star">
-  <img class="star" src="assets/images/StarFilled.png" alt="Star">
-  <img class="star" src="assets/images/StarFilled.png" alt="Star">
-  <img class="star" src="assets/images/StarBlank.png" alt="Star">
-
-  <div class="horario-container">
-    <h2>Horário</h2>
-    <div class="status">
-      <span>{{ statusText }}</span>
-      <!-- Botão para abrir o modal -->
-      <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#horariomodal">Ver horários</button>
-    </div>
-    <!-- Modal Horário-->
-    <div class="modal fade" id="horariomodal" tabindex="-1" role="dialog" aria-labelledby="horariomodalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="horariomodalLabel">Horário</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p> <strong>Segunda-feira</strong> 09:00 - 18:00</p>
-            <p> <strong>Terça-feira</strong> Encerrado</p>
-            <p> <strong>Quarta-feira</strong> 09:00 - 21:00</p>
-            <p> <strong>Quinta-feira</strong> 09:00 - 18:00</p>
-            <p> <strong>Sexta-feira</strong> 09:00 - 21:00</p>
-            <p> <strong>Sábado</strong> 09:00 - 18:00</p>
-            <p> <strong>Domingo</strong> 09:00 - 18:00</p>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="star-container">
+    <img class="star" src="assets/images/StarFilled.png" alt="Star">
+    <img class="star" src="assets/images/StarFilled.png" alt="Star">
+    <img class="star" src="assets/images/StarFilled.png" alt="Star">
+    <img class="star" src="assets/images/StarFilled.png" alt="Star">
+    <img class="star" src="assets/images/StarFilled.png" alt="Star"> 
   </div>
   <br>
 
@@ -98,16 +68,55 @@
     </div>
 
     <div class="col-md-6">
-      <!-- Caixa de informações à direita -->
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Bilhetes </h5>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ticketModal">Ver
-            Bilhetes</button>
+      <div class="cont">
+        <!-- Caixa de informações à direita -->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Sobre este Museu </h5>
+            <p>Duração 6 horas</p>
+            <p>Guia de áudio opcional</p>
+            <hr>
+            <h5 class="card-title">Bilhetes</h5>
+            <button type="button" class="btn btn-custom2" data-toggle="modal" data-target="#ticketModal">Ver
+              Bilhetes</button>
+              <br>
+              <br><hr>
+              <div class="horario-container">
+                <h5>Horário</h5>
+                <div class="status">
+                  <span>{{ statusText }}</span> <p></p>
+                  <!-- Botão para abrir o modal -->
+                  <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#horariomodal">Ver horários</button>
+                </div>
+                
+                <!-- Modal Horário-->
+                <div class="modal fade" id="horariomodal" tabindex="-1" role="dialog" aria-labelledby="horariomodalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="horariomodalLabel">Horário</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p> <strong>Segunda-feira</strong> 08:00 - 21:00</p>
+                        <p> <strong>Terça-feira</strong> 08:00 - 21:00</p>
+                        <p> <strong>Quarta-feira</strong> 08:00 - 21:00</p>
+                        <p> <strong>Quinta-feira</strong> 08:00 - 21:00</p>
+                        <p> <strong>Sexta-feira</strong> 08:00 - 21:00</p>
+                        <p> <strong>Sábado</strong> 10:00 - 19:00</p>
+                        <p> <strong>Domingo</strong> 12:00 - 16:00</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
   <!-- End row -->
 
   <!-- Modal para mostrar os bilhetes -->
@@ -122,12 +131,12 @@
           </button>
         </div>
         <div class="modal-body">
-          <p>Bilhete Geral 22€</p>
-          <p>Bilhete Menor de Idade Gratis</p>
+          <p>Bilhete c/guia 19€</p>
+          <p>Bilhete normal 13€</p>
+          <p>Bilhete c/áudio (inglês/espanhol/francês) 23€</p>
         </div>
         <div class="modal-footer">
-          <a href="https://www.louvre.fr/en/visit/hours-admission#ticket-prices" class="btn btn-primary">Comprar (site
-            oficial)</a>
+          <a href="https://www.awm.gov.au/visit" class="btn btn-primary">Comprar (site oficial)</a>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
         </div>
       </div>
@@ -191,30 +200,47 @@
   </p>
 
   <!-- Seção do catálogo de obras -->
+  
+
   <div class="row mt-5">
-    <div class="col-md-6">
-      <h2>Obras mais procuradas</h2>
-      <p>
-        <strong>Mona Lisa</strong>
-        - Leonardo da Vinci - 1503 <br>
-        A Mona Lisa, um dos tesouros mais emblemáticos do Museu do Louvre, cativa os espectadores com o seu sorriso
-        enigmático e aura intemporal. Pintada por Leonardo da Vinci no início do século XVI, esta obra-prima apresenta
-        pinceladas meticulosas e uma sensação de profundidade que continua a intrigar os entusiastas da arte em todo o
-        mundo.
-      </p>
-      <p><strong>The Coronation of Napoleon</strong>
-        - Jacques-Louis David - 1807 <br>
-        A Coroação de Napoleão, pintada por Jacques-Louis David, é uma obra de arte monumental exposta com destaque no
-        Museu do Louvre. Esta obra-prima captura a grandeza e o espetáculo da coroação de Napoleão Bonaparte como
-        Imperador da França em 1804, mostrando o domínio do artista no estilo neoclássico e na narrativa histórica.
-      </p>
-      <p><strong>Dante and Virgil in Hell</strong>
-        - Eugène Delacroix - 1850 <br>
-        Dante e Virgílio no Inferno, também conhecido como A Barca de Dante, é uma pintura cativante exposta no Museu do
-        Louvre. Criada pelo artista francês Eugène Delacroix, a obra de arte retrata vividamente uma cena da Divina
-        Comédia de Dante Alighieri, mostrando Dante e Virgílio navegando nas profundezas infernais, evocando temas de
-        exploração, jornada espiritual e condição humana.
-      </p>
+    <div class="col-md-6 ">
+      <h2>Obras mais procuradas</h2> <br>
+      <div class="image-text-item">
+        <img class="d-block shadow-1-strong rounded"
+             src="assets\images\Louvre\Top 3\Mona Lisa.webp"
+             alt="Mona Lisa">
+             <p>
+              <strong>Mona Lisa</strong>
+              - Leonardo da Vinci - 1503 <br>
+              A Mona Lisa, um dos tesouros mais emblemáticos do Museu do Louvre, cativa os espectadores com o seu sorriso
+              enigmático e aura intemporal. Pintada por Leonardo da Vinci no início do século XVI, esta obra-prima apresenta
+              pinceladas meticulosas e uma sensação de profundidade que continua a intrigar os entusiastas da arte em todo o
+              mundo.
+            </p>
+      </div>
+    
+    <div class="image-text-item">
+      <img class="d-block shadow-1-strong rounded"
+           src="assets\images\Louvre\Top 3\The Coronation of Napoleon.webp"
+           alt="The Coronation of Napoleon">
+           <p><strong>The Coronation of Napoleon</strong>
+            - Jacques-Louis David - 1807 <br>
+            A Coroação de Napoleão, pintada por Jacques-Louis David, é uma obra de arte monumental exposta com destaque no
+            Museu do Louvre. Esta obra-prima captura a grandeza e o espetáculo da coroação de Napoleão Bonaparte como
+            Imperador da França em 1804, mostrando o domínio do artista no estilo neoclássico e na narrativa histórica.
+          </p>
+    </div>
+    <div class="image-text-item">
+      <img class="d-block shadow-1-strong rounded"
+          src="assets\images\Louvre\Top 3\Dante and Virgil in Hell.webp"
+          alt="Hall of Memory">
+          <p><strong>Dante and Virgil in Hell</strong>
+            - Eugène Delacroix - 1850 <br>
+            Dante e Virgílio no Inferno, também conhecido como A Barca de Dante, é uma pintura cativante exposta no Museu do
+            Louvre. Criada pelo artista francês Eugène Delacroix, a obra de arte retrata vividamente uma cena da Divina
+            Comédia de Dante Alighieri, mostrando Dante e Virgílio navegando nas profundezas infernais, evocando temas de
+            exploração, jornada espiritual e condição humana.
+          </p>
     </div>
   </div>
 
@@ -233,11 +259,13 @@
   <!-- Seção da localização -->
   <div class="row mt-5">
     <div class="col-md-6">
-      <h2>Localização:</h2>
-      <p>75001 Paris </p>
-      <p>France</p>
+      <h2>Contactos:</h2>
+        <p>Questões Gerais: +33 (0)1 40 20 53 17</p>
+        <p>Perguntas Sobre Acesso Para Deficientes: +33 (0)1 40 20 59 90</p>
+        <p>Visitas Guiadas e Workshops: +33 (0)1 40 20 52 63</p>
+        <p>Visite o site: <a href="https://www.louvre.fr/en">aqui</a></p>
     </div>
-  </div>48.86063227527804, 2.337644
+  </div>
   <div class="container-fluid">
     <div class="row contact-map-container mt-5">
       <div class="col-md-6 map">
@@ -246,11 +274,10 @@
           style="border: 1px solid black;"></iframe>
       </div>
       <div class="col-md-6 contacts">
-        <h2>Contactos:</h2>
-        <p>Questões Gerais: +33 (0)1 40 20 53 17</p>
-        <p>Perguntas Sobre Acesso Para Deficientes: +33 (0)1 40 20 59 90</p>
-        <p>Visitas Guiadas e Workshops: +33 (0)1 40 20 52 63</p>
-        <p>Visite o site: <a href="https://www.louvre.fr/en">aqui</a></p>
+        <h2>Localização:</h2>
+        <p>75001 Paris </p>
+        <p>France</p>
+        
       </div>
     </div>
   </div>
@@ -278,7 +305,7 @@
           <img class="star" src="assets/images/StarFilled.png" alt="Star">
           <img class="star" src="assets/images/StarFilled.png" alt="Star">
           <img class="star" src="assets/images/StarFilled.png" alt="Star">
-          <img class="star" src="assets/images/StarBlank.png" alt="Star">
+          <img class="star" src="assets/images/StarFilled.png" alt="Star">
         </div>
       </div>
     </div>
@@ -296,7 +323,7 @@
           <img class="star" src="assets/images/StarFilled.png" alt="Star">
           <img class="star" src="assets/images/StarFilled.png" alt="Star">
           <img class="star" src="assets/images/StarFilled.png" alt="Star">
-          <img class="star" src="assets/images/StarBlank.png" alt="Star">
+          <img class="star" src="assets/images/StarFilled.png" alt="Star">
           <img class="star" src="assets/images/StarBlank.png" alt="Star">
         </div>
       </div>
