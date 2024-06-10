@@ -101,10 +101,6 @@
           <!-- Caixa de informações à direita -->
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Sobre este Museu </h5>
-              <p>Duração 4 horas</p>
-              <p>Guia de áudio opcional</p>
-              <hr>
               <h5 class="card-title">Bilhetes</h5> <br>
               <button type="button" class="btn btn-custom2" data-toggle="modal" data-target="#ticketModal">Ver
                 Bilhetes</button>
@@ -128,9 +124,9 @@
           </button>
         </div>
         <div class="modal-body">
-          <p>Bilhete c/guia 17€</p>
-          <p>Bilhete normal 11€</p>
-          <p>Bilhete c/áudio (inglês) 24€</p>
+          <p>Bilhete Adulto 30$</p>
+          <p>Bilhete Criança 23$</p>
+          <p>Bilhete Estudante 27$</p>
         </div>
         <div class="modal-footer">
           <a href="https://www.fieldmuseum.org/visit" class="btn btn-primary">Comprar (site oficial)</a>
@@ -179,19 +175,19 @@
     <div class="col-md-6">
       <h2>Obras Mais Procuradas:</h2>
       <p><strong>SUE the T. Rex</strong>
-        - Autor 1 - Data <br>
+        - 1990 - Sue Hendrickson<br>
         SUE é o maior, mais completo e mais bem preservado fóssil de Tyrannosaurus rex já descoberto, medindo 12 metros
         de comprimento e 4 metros de altura no quadril. Exibido no Field Museum desde 2000, SUE oferece informações
         valiosas sobre a vida e o ambiente de um dos dinossauros mais emblemáticos.
       </p>
       <p><strong>Maximo the Titanosaur</strong>
-        - Autor 2 - Data <br>
+        - 2014 <br>
         Máximo, o Titanossauro, é um elenco em tamanho real do Patagotitan mayorum, um dos maiores dinossauros já
         encontrados, medindo 36 metros da cabeça à cauda. Suspenso no salão principal do museu, Máximo permite que os
         visitantes caminhem sob sua enorme estrutura, maravilhando-se com a escala desses antigos gigantes.
       </p>
       <p><strong>Inside Ancient Egypt</strong>
-        - Autor 3 - Data <br>
+        <br>
         A exposição "Inside Ancient Egypt" no Field Museum recria o esplendor e a complexidade da antiga civilização
         egípcia, apresentando uma tumba totalmente reconstruída e mais de 5.000 artefatos. Os visitantes podem explorar
         a vida cotidiana, as práticas religiosas e as crenças dos antigos egípcios na vida após a morte por meio de
@@ -203,6 +199,23 @@
 
   <br>
   <h2>Audio</h2>
+  <p>
+    Áudio a falar sobre a história das vitrines de pragas que ameaçavam algumas das principais culturas de George
+    Washington Carver, preparadas e fixadas por Carl Cotton
+  </p>
+  <audio controls>
+    <source src="assets/images/Field/InsectsOfTheWorld.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <p>
+    Áudio falando sobre a história dos modelos de algodoeiro e leguminosa, ilustrando a ideia por trás de uma das
+    principais mensagens de Carver: a rotação de culturas
+  </p>
+  <audio controls>
+    <source src="assets/images/Field/PlantsOfTheWorld.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
@@ -221,6 +234,7 @@
       <div class="col-md-6 map">
         <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
           src="https://www.openstreetmap.org/export/embed.html?bbox=-87.615,41.865,-87.617,41.867&amp;layer=mapnik&amp;marker=41.86639682669735,-87.61696977116414"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-87.614,41.864,-87.620,41.869&amp;layer=mapnik&amp;marker=41.86639682669735,-87.61696977116414"
           style="border: 1px solid black;"></iframe>
       </div>
       <!--contactos-->
