@@ -9,7 +9,7 @@ export class GerraAustraliaComponent implements OnInit {
   statusText: string = '';
   isModalOpen: boolean = false;
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit(): void {
     this.updateStatus();
@@ -47,11 +47,11 @@ export class GerraAustraliaComponent implements OnInit {
     this.isModalOpen = false;
   }
 
-  days: number[] = Array.from({length: 31}, (_, i) => i + 1);
-  months: number[] = Array.from({length: 12}, (_, i) => i + 1);
+  days: number[] = Array.from({ length: 31 }, (_, i) => i + 1);
+  months: number[] = Array.from({ length: 12 }, (_, i) => i + 1);
 
-  anoInicio: number = 2020; 
-  anoFinal: number = 2030;   
-  years: number[] = Array.from({length: this.anoFinal - this.anoInicio + 1}, (_, i) => this.anoInicio + i);
+  anoInicio: number = 2020;
+  anoFinal: number = 2030;
+  years: number[] = Array.from({ length: this.anoFinal - this.anoInicio + 1 }, (_, i) => this.anoInicio + i);
 
 }

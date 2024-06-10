@@ -1,83 +1,121 @@
-<!--CORPO-->
 <div class="container-fluid">
   <h1>Museu Field</h1>
+  <h3>História Natural</h3>
 
-  <h2>Historia</h2>
-  <p>
+  <img class="star" src="assets/images/StarFilled.png" alt="Star">
+  <img class="star" src="assets/images/StarFilled.png" alt="Star">
+  <img class="star" src="assets/images/StarFilled.png" alt="Star">
+  <img class="star" src="assets/images/StarFilled.png" alt="Star">
+  <img class="star" src="assets/images/StarBlank.png" alt="Star">
 
-  </p>
+  <br>
 
-  <div class="row">
-    <div class="col-md-6">
-      <!-- Carousel wrapper -->
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="5000">
-        <!-- Slides -->
-        <div class="carousel-inner mb-5 shadow-1-strong rounded-3">
-          <div class="carousel-item active">
-            <img src="assets/images/Australian War Memorial/Aircraft Hall.jpg" class="d-block w-100"
-              alt="Aircraft Hall" />
+  <div class="horario-container">
+    <h2>Horário</h2>
+    <div class="status">
+      <span>{{ statusText }}</span>
+      <!-- Botão para abrir o modal -->
+      <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#horariomodal">Ver horários</button>
+    </div>
+    <!-- Modal Horário-->
+    <div class="modal fade" id="horariomodal" tabindex="-1" role="dialog" aria-labelledby="horariomodalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="horariomodalLabel">Horário</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-          <div class="carousel-item">
-            <img src="assets/images/Australian War Memorial/Gallipoli battle zone.webp" class="d-block w-100"
-              alt="Gallipoli battle zone" />
-          </div>
-          <div class="carousel-item">
-            <img src="assets/images/Australian War Memorial/Uniforms WW1.jpg" class="d-block w-100"
-              alt="Uniforms WWI" />
+          <div class="modal-body">
+            <p> <strong>Segunda-feira</strong> 09:00 - 17:00</p>
+            <p> <strong>Terça-feira</strong> 09:00 - 17:00</p>
+            <p> <strong>Quarta-feira</strong> 09:00 - 17:00</p>
+            <p> <strong>Quinta-feira</strong> 09:00 - 17:00</p>
+            <p> <strong>Sexta-feira</strong> 09:00 - 17:00</p>
+            <p> <strong>Sábado</strong> 09:00 - 17:00</p>
+            <p> <strong>Domingo</strong> 09:00 - 17:00</p>
           </div>
         </div>
-        <!-- Slides -->
-
-        <!-- Controls -->
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </a>
-        <!-- Controls -->
-
-        <!-- Thumbnails -->
-        <div class="carousel-indicators" style="margin-bottom: -20px;">
-          <button type="button" data-target="#carouselExampleControls" data-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1" style="width: 100px;">
-            <img class="d-block w-100 shadow-1-strong rounded"
-              src="assets/images/Australian War Memorial/Aircraft Hall.jpg" class="img-fluid" alt="Aircraft Hall" />
-          </button>
-          <button type="button" data-target="#carouselExampleControls" data-slide-to="1" aria-label="Slide 2"
-            style="width: 100px;">
-            <img class="d-block w-100 shadow-1-strong rounded"
-              src="assets/images/Australian War Memorial/Gallipoli battle zone.webp" class="img-fluid"
-              alt="Gallipoli battle zone" />
-          </button>
-          <button type="button" data-target="#carouselExampleControls" data-slide-to="2" aria-label="Slide 3"
-            style="width: 100px;">
-            <img class="d-block w-100 shadow-1-strong rounded"
-              src="assets/images/Australian War Memorial/Uniforms WW1.jpg" class="img-fluid" alt="Uniforms WWI" />
-          </button>
-        </div>
-        <!-- Thumbnails -->
       </div>
     </div>
+  </div>
 
-    <div class="col-md-6">
-      <!-- Caixa de informações à direita -->
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Informações:</h5>
-          <p>Duração: 2/3 Horas</p>
-          <hr>
-          <p>Bilhetes desde <span id="ticketPrice">...</span>€</p>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ticketModal">Ver
-            Bilhetes</button>
+  <br>
+
+  <div class="container-fluid linha">
+    <div class="row">
+      <div class="cont col-md-6">
+        <div class="conteudo">
+          <!-- Carousel wrapper -->
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="5000">
+            <!-- Slides -->
+            <div class="carousel-inner mb-5 shadow-1-strong rounded-3">
+              <div class="carousel-item active">
+                <img src="assets/images/Field/Field1.jpg" class="d-block w-100" alt="Aircraft Hall" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/Field/Field2.jpg" class="d-block w-100" alt="Gallipoli battle zone" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/Field/Field3.jpg" class="d-block w-100" alt="Uniforms WWI" />
+              </div>
+            </div>
+            <!-- Slides -->
+            <!-- Controls -->
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+            <!-- Controls -->
+            <!-- Thumbnails -->
+            <div class="carousel-indicators" style="margin-bottom: -20px;">
+              <button type="button" data-target="#carouselExampleControls" data-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1" style="width: 100px;">
+                <img class="d-block w-100 shadow-1-strong rounded" src="assets/images/Field/Field1.jpg"
+                  class="img-fluid" alt="Aircraft Hall" />
+              </button>
+              <button type="button" data-target="#carouselExampleControls" data-slide-to="1" aria-label="Slide 2"
+                style="width: 100px;">
+                <img class="d-block w-100 shadow-1-strong rounded" src="assets/images/Field/Field2.jpg"
+                  class="img-fluid" alt="Gallipoli battle zone" />
+              </button>
+              <button type="button" data-target="#carouselExampleControls" data-slide-to="2" aria-label="Slide 3"
+                style="width: 100px;">
+                <img class="d-block w-100 shadow-1-strong rounded" src="assets/images/Field/Field3.jpg"
+                  class="img-fluid" alt="Uniforms WWI" />
+              </button>
+            </div>
+            <!-- Thumbnails -->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="cont">
+          <!-- Caixa de informações à direita -->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Sobre este Museu </h5>
+              <p>Duração 4 horas</p>
+              <p>Guia de áudio opcional</p>
+              <hr>
+              <h5 class="card-title">Bilhetes</h5> <br>
+              <button type="button" class="btn btn-custom2" data-toggle="modal" data-target="#ticketModal">Ver
+                Bilhetes</button>
+
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <!-- End row -->
-
   <!-- Modal para mostrar os bilhetes -->
   <div class="modal fade" id="ticketModal" tabindex="-1" role="dialog" aria-labelledby="ticketModalLabel"
     aria-hidden="true">
@@ -90,27 +128,81 @@
           </button>
         </div>
         <div class="modal-body">
-          <p>Bilhete c/guia 2€</p>
-          <p>Bilhete normal 3€</p>
+          <p>Bilhete c/guia 17€</p>
+          <p>Bilhete normal 11€</p>
+          <p>Bilhete c/áudio (inglês) 24€</p>
         </div>
         <div class="modal-footer">
-          <a href="https://www.google.com" class="btn btn-primary">Comprar (site oficial)</a>
+          <a href="https://www.fieldmuseum.org/visit" class="btn btn-primary">Comprar (site oficial)</a>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
         </div>
       </div>
     </div>
   </div>
 
+
+  <h2>Historia</h2>
+  <p>
+    O Field Museum, localizado em Chicago, Illinois, é um dos maiores museus de história natural do mundo. Tem uma
+    história rica que remonta à Exposição Mundial da Colômbia de 1893, também conhecida como Feira Mundial de Chicago. O
+    museu originou-se das extensas coleções da feira, principalmente das de seu presidente, Marshall Field, um
+    proeminente empresário de Chicago.
+  </p>
+  <p>
+    Após a Feira Mundial, Marshall Field doou US$ 1 milhão para estabelecer um museu permanente em Chicago. Em 1894, o
+    museu foi oficialmente incorporado como Museu Colombiano de Chicago. Ao longo dos anos, o museu ampliou suas
+    coleções e iniciativas de pesquisa, com foco em antropologia, botânica, geologia e zoologia.
+  </p>
+  <p>
+    Em 1905, o nome do museu foi alterado para homenagear seu principal benfeitor, passando a ser Museu Field de
+    História Natural. Ao longo do início do século XX, o museu continuou a crescer, acrescentando novas exposições e
+    adquirindo exemplares significativos através de expedições ao redor do mundo.
+  </p>
+  <p>
+    Uma das expedições mais notáveis ​​​​na história do museu foi a Expedição Field Museum-East Greenland de 1932-1933,
+    liderada pelo Dr. Esta expedição resultou na recolha de milhares de exemplares, entre fósseis, plantas e artefactos,
+    que enriqueceram enormemente o acervo científico do museu.
+  </p>
+  <p>
+    Na segunda metade do século 20, o Museu Field ampliou seu foco para incluir a conservação ambiental e a diversidade
+    cultural. Estabeleceu programas destinados a preservar espécies e habitats ameaçados, bem como iniciativas para
+    celebrar e promover a compreensão de diversas culturas.
+  </p>
+  <p>
+    Hoje, o Field Museum continua a ser uma instituição líder em pesquisa científica, educação e conservação. Suas
+    extensas coleções, exposições inovadoras e descobertas científicas contínuas fazem dele um recurso vital para a
+    compreensão do mundo natural e do lugar da humanidade nele.
+  </p>
+
   <!-- Seção do catálogo de obras -->
   <div class="row mt-5">
     <div class="col-md-6">
-      <h2>Catálogo obras Museu (top 3 obras mais procuradas):</h2>
-      <p><strong>Obra 1:</strong> Autor 1 - Data</p>
-      <p><strong>Obra 2:</strong> Autor 2 - Data</p>
-      <p><strong>Obra 3:</strong> Autor 3 - Data</p>
+      <h2>Obras Mais Procuradas:</h2>
+      <p><strong>SUE the T. Rex</strong>
+        - Autor 1 - Data <br>
+        SUE é o maior, mais completo e mais bem preservado fóssil de Tyrannosaurus rex já descoberto, medindo 12 metros
+        de comprimento e 4 metros de altura no quadril. Exibido no Field Museum desde 2000, SUE oferece informações
+        valiosas sobre a vida e o ambiente de um dos dinossauros mais emblemáticos.
+      </p>
+      <p><strong>Maximo the Titanosaur</strong>
+        - Autor 2 - Data <br>
+        Máximo, o Titanossauro, é um elenco em tamanho real do Patagotitan mayorum, um dos maiores dinossauros já
+        encontrados, medindo 36 metros da cabeça à cauda. Suspenso no salão principal do museu, Máximo permite que os
+        visitantes caminhem sob sua enorme estrutura, maravilhando-se com a escala desses antigos gigantes.
+      </p>
+      <p><strong>Inside Ancient Egypt</strong>
+        - Autor 3 - Data <br>
+        A exposição "Inside Ancient Egypt" no Field Museum recria o esplendor e a complexidade da antiga civilização
+        egípcia, apresentando uma tumba totalmente reconstruída e mais de 5.000 artefatos. Os visitantes podem explorar
+        a vida cotidiana, as práticas religiosas e as crenças dos antigos egípcios na vida após a morte por meio de
+        exibições interativas e artefatos autênticos.
+      </p>
     </div>
   </div>
 
+
+  <br>
+  <h2>Audio</h2>
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
@@ -119,23 +211,28 @@
   <div class="row mt-5">
     <div class="col-md-6">
       <h2>Localização:</h2>
-      <p>Treloar Crescent Campbell, Canberra 2612 Austrália</p>
+      <p>1400 S Lake Shore Dr </p>
+      <p>Chicago, IL 60605</p>
+      <p>USA</p>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row contact-map-container mt-5">
+      <div class="col-md-6 map">
+        <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-87.615,41.865,-87.617,41.867&amp;layer=mapnik&amp;marker=41.86639682669735,-87.61696977116414"
+          style="border: 1px solid black;"></iframe>
+      </div>
+      <!--contactos-->
+      <div class="col-md-6 contacts">
+        <h2>Contactos:</h2>
+        <p>Questões Gerais: 312 922 9410</p>
+        <p>Teletipo: 312 665 7669</p>
+        <p>Visite o site: <a href="https://www.fieldmuseum.org/">aqui</a></p>
+      </div>
     </div>
   </div>
 
-  <!-- Mapa do OpenStreetMap em um quadrado menor -->
-  <iframe width="400" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-    src="https://www.openstreetmap.org/export/embed.html?bbox=144.9713,-37.8076,144.9733,-37.8056&amp;layer=mapnik&amp;marker=-37.8066,144.9723"
-    style="border: 1px solid black;"></iframe>
-
-  <!-- Seção de contatos -->
-  <div class="row mt-5">
-    <div class="col-md-6">
-      <h2>Contactos:</h2>
-      <p>Visite o site: <a href="#">link</a></p>
-      <p>Telefone: (xx) xxx xxxx</p>
-    </div>
-  </div>
 
   <!-- Seção de avaliações -->
   <div class="row mt-5">
