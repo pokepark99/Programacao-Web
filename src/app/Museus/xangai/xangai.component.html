@@ -8,84 +8,114 @@
   <img class="star" src="assets/images/StarFilled.png" alt="Star">
   <img class="star" src="assets/images/StarBlank.png" alt="Star">
 
+  <br>
 
+  <script src="script.js"></script>
 
-
-
-
-
-
-  <div class="row">
-    <div class="col-md-6">
-      <!-- Carousel wrapper -->
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="5000">
-        <!-- Slides -->
-        <div class="carousel-inner mb-5 shadow-1-strong rounded-3">
-          <div class="carousel-item active">
-            <img src="assets/images/Australian War Memorial/Aircraft Hall.jpg" class="d-block w-100"
-              alt="Aircraft Hall" />
+  <div class="horario-container">
+    <h2>Horário</h2>
+    <div class="status">
+      <span>{{ statusText }}</span>
+      <!-- Botão para abrir o modal -->
+      <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#horariomodal">Ver horários</button>
+    </div>
+    <!-- Modal Horário-->
+    <div class="modal fade" id="horariomodal" tabindex="-1" role="dialog" aria-labelledby="horariomodalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="horariomodalLabel">Horário</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-          <div class="carousel-item">
-            <img src="assets/images/Australian War Memorial/Gallipoli battle zone.webp" class="d-block w-100"
-              alt="Gallipoli battle zone" />
-          </div>
-          <div class="carousel-item">
-            <img src="assets/images/Australian War Memorial/Uniforms WW1.jpg" class="d-block w-100"
-              alt="Uniforms WWI" />
+          <div class="modal-body">
+            <p> <strong>Segunda-feira</strong> Encerrado</p>
+            <p> <strong>Terça-feira</strong> 09:00 - 17:00</p>
+            <p> <strong>Quarta-feira</strong> 09:00 - 17:00</p>
+            <p> <strong>Quinta-feira</strong> 09:00 - 17:00</p>
+            <p> <strong>Sexta-feira</strong> 09:00 - 17:00</p>
+            <p> <strong>Sábado</strong> 09:00 - 17:00</p>
+            <p> <strong>Domingo</strong> 9:00 - 17:00</p>
           </div>
         </div>
-        <!-- Slides -->
-
-        <!-- Controls -->
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </a>
-        <!-- Controls -->
-
-        <!-- Thumbnails -->
-        <div class="carousel-indicators" style="margin-bottom: -20px;">
-          <button type="button" data-target="#carouselExampleControls" data-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1" style="width: 100px;">
-            <img class="d-block w-100 shadow-1-strong rounded"
-              src="assets/images/Australian War Memorial/Aircraft Hall.jpg" class="img-fluid" alt="Aircraft Hall" />
-          </button>
-          <button type="button" data-target="#carouselExampleControls" data-slide-to="1" aria-label="Slide 2"
-            style="width: 100px;">
-            <img class="d-block w-100 shadow-1-strong rounded"
-              src="assets/images/Australian War Memorial/Gallipoli battle zone.webp" class="img-fluid"
-              alt="Gallipoli battle zone" />
-          </button>
-          <button type="button" data-target="#carouselExampleControls" data-slide-to="2" aria-label="Slide 3"
-            style="width: 100px;">
-            <img class="d-block w-100 shadow-1-strong rounded"
-              src="assets/images/Australian War Memorial/Uniforms WW1.jpg" class="img-fluid" alt="Uniforms WWI" />
-          </button>
-        </div>
-        <!-- Thumbnails -->
       </div>
     </div>
+  </div>
+  <br>
 
-    <div class="col-md-6">
-      <!-- Caixa de informações à direita -->
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Informações:</h5>
-          <p>Duração: 2/3 Horas</p>
-          <hr>
-          <p>Bilhetes desde <span id="ticketPrice">...</span>€</p>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ticketModal">Ver
-            Bilhetes</button>
+  <div class="container-fluid linha">
+    <div class="row">
+      <div class="cont col-md-6">
+        <div class="conteudo">
+          <!-- Carousel wrapper -->
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="5000">
+            <!-- Slides -->
+            <div class="carousel-inner mb-5 shadow-1-strong rounded-3">
+              <div class="carousel-item active">
+                <img src="assets/images/Xangai/Xangai1.jpg" class="d-block w-100" alt="Xangai1" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/Xangai/Xangai2.jpg" class="d-block w-100" alt="Xangai2" />
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/Xangai/Xangai3.jpg" class="d-block w-100" alt="Xangai3" />
+              </div>
+            </div>
+            <!-- Slides -->
+            <!-- Controls -->
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+            <!-- Controls -->
+            <!-- Thumbnails -->
+            <div class="carousel-indicators" style="margin-bottom: -20px;">
+              <button type="button" data-target="#carouselExampleControls" data-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1" style="width: 100px;">
+                <img class="d-block w-100 shadow-1-strong rounded" src="assets/images/Xangai/Xangai1.jpg"
+                  class="img-fluid" alt="Xangai1" />
+              </button>
+              <button type="button" data-target="#carouselExampleControls" data-slide-to="1" aria-label="Slide 2"
+                style="width: 100px;">
+                <img class="d-block w-100 shadow-1-strong rounded" src="assets/images/Xangai/Xangai2.jpg"
+                  class="img-fluid" alt="Xangai2" />
+              </button>
+              <button type="button" data-target="#carouselExampleControls" data-slide-to="2" aria-label="Slide 3"
+                style="width: 100px;">
+                <img class="d-block w-100 shadow-1-strong rounded" src="assets/images/Xangai/Xangai3.jpg"
+                  class="img-fluid" alt="Xangai3" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="cont">
+          <!-- Caixa de informações à direita -->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Sobre este Memorial </h5>
+              <p>Duração 4 horas</p>
+              <p>Guia de áudio opcional</p>
+              <hr>
+              <h5 class="card-title">Bilhetes</h5> <br>
+              <button type="button" class="btn btn-custom2" data-toggle="modal" data-target="#ticketModal">Ver
+                Bilhetes</button>
+
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <!-- End row -->
-
   <!-- Modal para mostrar os bilhetes -->
   <div class="modal fade" id="ticketModal" tabindex="-1" role="dialog" aria-labelledby="ticketModalLabel"
     aria-hidden="true">
@@ -98,11 +128,14 @@
           </button>
         </div>
         <div class="modal-body">
-          <p>Bilhete c/guia 2€</p>
-          <p>Bilhete normal 3€</p>
+          <p>Bilhete Adulto 6€</p>
+          <p>Bilhete Estudante 3€</p>
+          <p>Bilhete Senior (60-69) 5€</p>
+          <p>Bilhete Senior (70+) Gratis</p>
+          <p>Bilhete Criança Gratis</p>
         </div>
-        <div class="modal-footer">
-          <a href="https://www.google.com" class="btn btn-primary">Comprar (site oficial)</a>
+        <div class="modal-footer d-flex justify-content-between">
+          <p class="mb-0"><strong>Comprar Bilhete:</strong> Só em pessoa</p>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
         </div>
       </div>
@@ -142,13 +175,26 @@
   <!-- Seção do catálogo de obras -->
   <div class="row mt-5">
     <div class="col-md-6">
-      <h2>Catálogo obras Museu (top 3 obras mais procuradas):</h2>
-      <p><strong>Obra 1:</strong> Autor 1 - Data</p>
-      <p><strong>Obra 2:</strong> Autor 2 - Data</p>
-      <p><strong>Obra 3:</strong> Autor 3 - Data</p>
+      <h2>Obras Mais Procuradas</h2>
+      <p><strong>Home on Earth</strong>
+        <br>
+        O boom populacional e o rápido crescimento da produtividade levaram a uma série de problemas ambientais
+        ecológicos. Como podemos lidar com eles? Buscar juntos uma convivência harmoniosa com a natureza.
+      </p>
+      <p><strong>Information Era</strong>
+        <br>
+        O desenvolvimento da tecnologia da informação mudou muito a maneira como vivemos, trabalhamos e estudamos.
+        Tecnologias como a Internet, a identificação de imagens, o reconhecimento de voz, a realidade virtual e a
+        simulação computacional estão a tornar-se uma parte indispensável da nossa vida.
+      </p>
+      <p><strong>World Of Robots</strong>
+        <br>
+        O desenvolvimento da tecnologia da informação mudou muito a maneira como vivemos, ganhamos e estudamos.
+        Tecnologias como a Internet, a identificação de imagens, o reconhecimento de voz, a realidade virtual e a
+        simulação computacional estão a tornar-se uma parte indispensável da nossa vida.
+      </p>
     </div>
   </div>
-
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
@@ -157,52 +203,155 @@
   <div class="row mt-5">
     <div class="col-md-6">
       <h2>Localização:</h2>
-      <p>Treloar Crescent Campbell, Canberra 2612 Austrália</p>
+      <p>2000 Shiji Blvd </p>
+      <p>Pudong, Shanghai</p>
+      <p>China</p>
     </div>
   </div>
-
-  <!-- Mapa do OpenStreetMap em um quadrado menor -->
-  <iframe width="400" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-    src="https://www.openstreetmap.org/export/embed.html?bbox=2.3356,48.8619,2.3378,48.8639&amp;layer=mapnik&amp;marker=48.8629,2.3367"
-    style="border: 1px solid black; aspect-ratio: 1;"></iframe>
-
-  <!-- Seção de contatos -->
-  <div class="row mt-5">
-    <div class="col-md-6">
-      <h2>Contactos:</h2>
-      <p>Visite o site: <a href="#">link</a></p>
-      <p>Telefone: (xx) xxx xxxx</p>
-    </div>
-  </div>
-
-  <!-- Seção de avaliações -->
-  <div class="row mt-5">
-    <div class="col-md-6">
-      <h2>Avaliações</h2>
-      <!-- Seletor de 5 estrelas aqui -->
-      <!-- Avaliações dadas aqui -->
+  <div class="container-fluid">
+    <div class="row contact-map-container mt-5">
+      <div class="col-md-6 map">
+        <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=121.535,31.220,121.545,31.222&amp;layer=mapnik&amp;marker=31.22146699384816,121.54004418833382"
+          style="border: 1px solid black;"></iframe>
+      </div>
+      <div class="col-md-6 contacts">
+        <h2>Contactos:</h2>
+        <p>Telefone: +86 21 6854 2000</p>
+        <p>Visite o site: <a href="https://en.sstm.org.cn/">aqui</a></p>
+      </div>
     </div>
   </div>
 
   <br>
   <br>
+  <div class="avaliacoes">
+    <h2>Avaliações</h2>
+    <img class="star" src="assets/images/StarFilled.png" alt="Star">
+    <img class="star" src="assets/images/StarFilled.png" alt="Star">
+    <img class="star" src="assets/images/StarFilled.png" alt="Star">
+    <img class="star" src="assets/images/StarFilled.png" alt="Star">
+    <img class="star" src="assets/images/StarBlank.png" alt="Star">
+    <div class="avaliacao">
+      <div class="row">
+        <div class="col-md-6">
+          <div>
+            <strong>Aisha</strong>
+            <p>03/03/2024</p>
+          </div>
+          La dilfeas vuot quo scolt. Mue poz artriu mostre qua potraste.
+        </div>
+        <div class="col-md-6 text-md-end">
+          <img class="star" src="assets/images/StarFilled.png" alt="Star">
+          <img class="star" src="assets/images/StarFilled.png" alt="Star">
+          <img class="star" src="assets/images/StarFilled.png" alt="Star">
+          <img class="star" src="assets/images/StarFilled.png" alt="Star">
+          <img class="star" src="assets/images/StarBlank.png" alt="Star">
+        </div>
+      </div>
+    </div>
 
-  <h2>Mapa</h2>
+    <div class="avaliacao">
+      <div class="row">
+        <div class="col-md-6">
+          <div>
+            <strong>Emma</strong>
+            <p>01/08/2022</p>
+          </div>
+          La dilfeas vuot quo sc olt. Mue poz artriu mostre qua potraste.
+        </div>
+        <div class="col-md-6 text-md-end">
+          <img class="star" src="assets/images/StarFilled.png" alt="Star">
+          <img class="star" src="assets/images/StarFilled.png" alt="Star">
+          <img class="star" src="assets/images/StarFilled.png" alt="Star">
+          <img class="star" src="assets/images/StarBlank.png" alt="Star">
+          <img class="star" src="assets/images/StarBlank.png" alt="Star">
+        </div>
+      </div>
+    </div>
 
-  <h2>Eventos</h2>
+    <div class="avaliacao">
+      <div class="row">
+        <div class="col-md-6">
+          <div>
+            <strong>Benny</strong>
+            <p>22/07/2021</p>
+          </div>
+          La dilfeas vuot quo scolt. Mue poz artriu mostre qua potraste.
+        </div>
+        <div class="col-md-6 text-md-end">
+          <img class="star" src="assets/images/StarFilled.png" alt="Star">
+          <img class="star" src="assets/images/StarFilled.png" alt="Star">
+          <img class="star" src="assets/images/StarFilled.png" alt="Star">
+          <img class="star" src="assets/images/StarFilled.png" alt="Star">
+          <img class="star" src="assets/images/StarFilled.png" alt="Star">
+        </div>
+      </div>
+    </div>
 
-  <h2>Compra de Bilhetes</h2>
+    <button type="button" class="btn btn-custom3" data-toggle="modal" data-target="#avaliacaoModal">Inserir
+      Avaliação</button>
+  </div>
+  <!---->
+  <!-- Modal para inserir avaliacao -->
+  <div class="modal fade" id="avaliacaoModal" tabindex="-1" role="dialog" aria-labelledby="avaliacaoModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="avaliacaoModal">Inserir Avaliação</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex align-items-center">
+            <p class="mr-2">Classificação:</p> <!--adicionar metodo-->
+            <img class="star" src="assets/images/StarBlank.png" alt="Star">
+            <img class="star" src="assets/images/StarBlank.png" alt="Star">
+            <img class="star" src="assets/images/StarBlank.png" alt="Star">
+            <img class="star" src="assets/images/StarBlank.png" alt="Star">
+            <img class="star" src="assets/images/StarBlank.png" alt="Star">
+          </div>
+          <div class="d-flex align-items-center">
+            <p class="mb-0 mr-2">Quando foi:</p>
+            <!--dia-->
+            <select id="day" required>
+              <option value="">Dia</option>
+              @for( day of days; track day) {
+              <option>{{ day }}</option>
+              }
+            </select>
+            <!--mes-->
+            <select id="month" required>
+              <option value="">Mes</option>
+              @for( month of months; track month) {
+              <option>{{ month }}</option>
+              }
+            </select>
+            <!--ano-->
+            <select id="year" required>
+              <option value="">Ano</option>
+              @for( year of years; track year) {
+              <option>{{ year }}</option>
+              }
+            </select>
+          </div>
 
-  <h2>Avaliações</h2>
+          <p>Escreva avaliação:</p>
+          <textarea id="avaliacaoTexto" name="avaliacaoTexto" rows="4" cols="60" style="resize: none; overflow-y: auto;"
+            placeholder="Escreva a sua avaliação aqui..."></textarea>
 
-  <h2>Catálogo de obras</h2>
+        </div>
 
-  <h2>Fotos</h2>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Confirmar</button>
+          <!--adicionar funcao para inserir avaliacao-->
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
 
-  <h2>Audio</h2>
-
-  <h2>Eventos</h2>
-
-  <br>
-  No footer: Autores, Data, Categoria(?)
 </div>
