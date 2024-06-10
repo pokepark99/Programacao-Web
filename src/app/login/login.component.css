@@ -3,23 +3,20 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('../../assets/images/w6.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #f0f0f0; /* Cor sólida de fundo */
 }
 
 .main-04 {
     display: flex; 
     width: 60%;
     height: 70%;
-    background-color: none;
+    background-color: transparent; /* Use "transparent" para garantir que o fundo seja transparente */
     text-align: center;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.formDiv-04{
+.formDiv-04 {
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -32,7 +29,7 @@
     border-bottom-right-radius: 20px;
 }
 
-.iconDiv-04{
+.iconDiv-04 {
     cursor: pointer;
     width: 50%;
     display: flex;
@@ -46,7 +43,7 @@
     border-bottom-left-radius: 20px;
 }
 
-.input-box-04{
+.input-box-04 {
     width: 70%;
     height: 10%;
     border: 0;
@@ -57,24 +54,24 @@
     align-items: center;
 }
 
-.input-04{
+.input-04 {
     margin-right: 15%;
     border: 0;
     width: 85%;
     height: 90%;
-    font-size: 115%
+    font-size: 115%;
 }
 
-.input-04:focus{
+.input-04:focus {
     outline: 0;
 }
 
-.greetings-04{
+.greetings-04 {
     font-size: 300%;
     margin-top: 30px;
 }
 
-.button-04{
+.button-04 {
     padding: 5px 20px;
     font-size: 130%;
     border: none;
@@ -91,7 +88,7 @@
     background-color: #011c25;
 }
 
-.icon-04{
+.icon-04 {
     transition: transform 0.3s ease;
 }
 
@@ -99,115 +96,7 @@
     transform: scale(1.1);
 }
 
-.link-04{
-    color: #fff;
-    text-decoration: none;
-}
-
-.linkhover:hover {
-    cursor: pointer;
-}#bg-04 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url('../../assets/images/w6.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.main-04 {
-    display: flex; 
-    width: 60%;
-    height: 70%;
-    background-color: none;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.formDiv-04{
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-.iconDiv-04{
-    cursor: pointer;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #011c25;
-    background-repeat: no-repeat;
-    background-attachment: cover;
-    background-position: 50% 58%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-
-.input-box-04{
-    width: 70%;
-    height: 10%;
-    border: 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.07);
-    background-color: white;
-    display: flex;
-    align-items: center;
-}
-
-.input-04{
-    margin-right: 15%;
-    border: 0;
-    width: 85%;
-    height: 90%;
-    font-size: 115%
-}
-
-.input-04:focus{
-    outline: 0;
-}
-
-.greetings-04{
-    font-size: 300%;
-    margin-top: 30px;
-}
-
-.button-04{
-    padding: 5px 20px;
-    font-size: 130%;
-    border: none;
-    background-color: #012837; 
-    color: #fff; 
-    border-radius: 10px;
-    cursor: pointer;
-    text-align: center;
-    margin: 0 auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.button-04:hover {
-    background-color: #011c25;
-}
-
-.icon-04{
-    transition: transform 0.3s ease;
-}
-
-.icon-04:hover {
-    transform: scale(1.1);
-}
-
-.link-04{
+.link-04 {
     color: #fff;
     text-decoration: none;
 }
