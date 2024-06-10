@@ -4,3 +4,27 @@ h1 {
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+.about-section, .mission-section, .unique-section, .how-section {
+    margin-bottom: 40px;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.about-section, .mission-section, .unique-section, .how-section {
+    margin-bottom: 40px;
+}
+h1, h2 {
+    color: #333;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
