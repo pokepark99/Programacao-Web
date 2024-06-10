@@ -19,7 +19,7 @@
 .formDiv-04 {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 2vh;
     justify-content: center;
     align-items: center;
     width: 50%;
@@ -44,12 +44,12 @@
     width: 100%; /* Ajuste a largura para ocupar todo o espaço disponível */
     height: 100%; /* Ajuste a altura para ocupar todo o espaço disponível */
     object-fit: contain; /* Mantém a proporção da imagem */
-    padding: 10%; /* Adiciona padding para dar um espaçamento interno */
+    padding: 5%; /* Adiciona padding para dar um espaçamento interno */
 }
 
 .input-box-04 {
     width: 70%;
-    height: 10%;
+    height: 5vh;
     border: 0;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.07);
@@ -59,11 +59,11 @@
 }
 
 .input-04 {
-    margin-right: 15%;
+    margin-right: 10%;
     border: 0;
     width: 85%;
     height: 90%;
-    font-size: 115%;
+    font-size: 1.15em;
 }
 
 .input-04:focus {
@@ -71,18 +71,18 @@
 }
 
 .greetings-04 {
-    font-size: 300%;
-    margin-top: 30px;
+    font-size: 3em;
+    margin-top: 2vh;
 }
 
 .button-04 {
-    padding: 5px 20px;
-    font-size: 130%;
+    padding: 1vh 2vw;
+    font-size: 1.3em;
     border: none;
     background-color: #012837; 
     color: #fff; 
     border-radius: 10px;
-    cursor: pointer;
+    cursor: pointer; 
     text-align: center;
     margin: 0 auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
