@@ -9,6 +9,7 @@ import { NationalAustralianComponent } from './Museus/national-australian/nation
 import { LouvreComponent } from './Museus/louvre/louvre.component';
 import { LoginComponent } from './login/login.component';
 import { routes } from './app.routes';
+import { RegisteComponent } from './registe/registe.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { routes } from './app.routes';
     GerraAustraliaComponent,
     NationalAustralianComponent,
     LouvreComponent,
-    LoginComponent
+    LoginComponent,
+    RegisteComponent
   ],
 
   imports: [

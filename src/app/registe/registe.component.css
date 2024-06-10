@@ -3,20 +3,15 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('../../assets/images/w6.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #9c6a72; /* Cor sólida de fundo */
 }
 
 .main-06 {
-    margin-top: 10%;
-    margin-bottom: 10%;
     display: flex; 
     width: 60%;
-    background-color: none;
+    height: 70%;
+    background-color: transparent; /* Use "transparent" para garantir que o fundo seja transparente */
     text-align: center;
-    margin: 0 auto;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -40,13 +35,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #011c25;
-    background-repeat: no-repeat;
-    background-attachment: cover;
-    background-position: 50% 58%;
+    background-color: #EADACD; /* Cor sólida */
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    overflow: hidden; /* Garante que a imagem não ultrapasse as bordas arredondadas */
 }
+.icon-04 {
+    width: 100%; /* Ajuste a largura para ocupar todo o espaço disponível */
+    height: 100%; /* Ajuste a altura para ocupar todo o espaço disponível */
+    object-fit: contain; /* Mantém a proporção da imagem */
+    padding: 10%; /* Adiciona padding para dar um espaçamento interno */
+}
+
 
 .input-box-06{
     width: 70%;
@@ -107,20 +107,22 @@
 }
 
 .button-06{
-    padding: 5px 20px;
-    font-size: 130%;
+    padding: 10px 20px; /* Ajuste de padding para um melhor espaçamento */
+    font-size: 16px; /* Tamanho da fonte ajustado */
     border: none;
     background-color: #012837; 
     color: #fff; 
-    border-radius: 10px;
+    border-radius: 5px; /* Redução do raio da borda para ficar mais parecido com o botão de exemplo */
     cursor: pointer;
     text-align: center;
     margin: 0 auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
 }
 
 .button-06:hover {
     background-color: #011c25;
+    
 }
 
 .linknote-06{
@@ -135,3 +137,5 @@
 .linkhover:hover {
     cursor: pointer;
 }
+
+
