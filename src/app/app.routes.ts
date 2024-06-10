@@ -3,6 +3,12 @@ import { MainLayoutComponent } from './main-layout/main-layout.component';
 import { InicialComponent } from './Inicial/inicial.component'; 
 import { LoginComponent } from './login/login.component';
 import { RegisteComponent } from './registe/registe.component';
+import { GerraAustraliaComponent } from './Museus/gerra-australia/gerra-australia.component';
+import { FieldComponent } from './Museus/field/field.component';
+import { NationalAustralianComponent } from './Museus/national-australian/national-australian.component';
+import { LouvreComponent } from './Museus/louvre/louvre.component';
+import { XangaiComponent } from './Museus/xangai/xangai.component';
+import { AboutComponent } from './about/about.component';
 
 export const routes: Routes = [
   {
@@ -10,9 +16,17 @@ export const routes: Routes = [
     component: MainLayoutComponent,
     children: [
       { path: '', redirectTo: 'home', pathMatch: 'full' },
-      { path: 'home', component: InicialComponent }
+      { path: 'home', component: InicialComponent },
+      {path: 'guerraAustralia', component: GerraAustraliaComponent},
+      {path: 'field', component: FieldComponent},
+      {path: 'xangai', component: XangaiComponent},
+      {path: 'nationalAustralian', component: NationalAustralianComponent},
+      {path: 'louvre', component: LouvreComponent},
+      {path: 'about', component: AboutComponent},
     ]
   },
   { path: 'login', component: LoginComponent },
-  { path: 'registe', component: RegisteComponent }
+  { path: 'registe', component: RegisteComponent },
+  
+
 ];
