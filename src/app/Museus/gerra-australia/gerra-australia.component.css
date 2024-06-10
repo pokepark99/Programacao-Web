@@ -4,7 +4,7 @@
 }
 
 h1 {
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 20px;
   text-align: center;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -18,19 +18,19 @@ h3 {
 }
 
 .btn-custom {
-  background-color: #5934c8;
+  background-color: #E7E2D4;
   border-color: #060606;
   color: white;
 }
 
 .btn-custom2 {
-  background-color: #5934c8;
+  background-color: #E7E2D4;
   border-color: #060606;
   color: white;
 }
 
 .btn-custom3 {
-  background-color: #5934c8;
+  background-color: #E7E2D4;
   border-color: #060606;
   color: white;
 }
@@ -48,7 +48,7 @@ h3 {
 }
 
 .carousel-indicators .active {
-  background-color: rgb(201, 198, 250);
+  background-color: #E7E2D4;
 }
 
 .modal-header .close {
@@ -171,17 +171,16 @@ h2 {
   /* Defina a altura máxima conforme necessário */
   overflow-y: scroll;
   border: 1px solid #ccc;
-  /* Opcional */
+  
   padding: 10px;
-  /* Opcional */
+  
 }
 
 .avaliacao {
   margin-bottom: 10px;
   border-bottom: 1px solid #ccc;
-  /* Opcional */
   padding-bottom: 10px;
-  /* Opcional */
+  
 }
 
 .modal .form-group {
@@ -193,18 +192,20 @@ h2 {
   padding: 20px;
   border-radius: 15px;
   width: calc(50%);
+  background-color: #fff;
 }
 
 .avaliacao {
   border: 1px solid black;
   padding: 10px;
   border-radius: 15px;
+  background-color: #fff;
 }
 
 
 
 .horario-container {
-  text-align: center;
+  text-align: left;
 }
 
 .status {
@@ -214,14 +215,14 @@ h2 {
 button {
   padding: 5px 10px;
   border: none;
-  background-color: #007BFF;
+  background-color: #9c6a72;
   color: white;
   cursor: pointer;
   border-radius: 5px;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #9c6a72;
 }
 
 .popup {

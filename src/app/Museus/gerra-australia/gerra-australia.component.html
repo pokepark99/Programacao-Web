@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid"> <br>
   <h1>Memorial de Guerra Australiano</h1>
   <h3>Militar</h3>
 
@@ -12,38 +12,7 @@
 
   <script src="script.js"></script>
 
-  <div class="horario-container">
-    <h2>Horário</h2>
-    <div class="status">
-      <span>{{ statusText }}</span>
-      <!-- Botão para abrir o modal -->
-      <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#horariomodal">Ver horários</button>
-    </div>
-    <!-- Modal Horário-->
-    <div class="modal fade" id="horariomodal" tabindex="-1" role="dialog" aria-labelledby="horariomodalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="horariomodalLabel">Horário</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p> <strong>Segunda-feira</strong> 08:00 - 19:00</p>
-            <p> <strong>Terça-feira</strong> 08:00 - 19:00</p>
-            <p> <strong>Quarta-feira</strong> 08:00 - 19:00</p>
-            <p> <strong>Quinta-feira</strong> 08:00 - 19:00</p>
-            <p> <strong>Sexta-feira</strong> 08:00 - 19:00</p>
-            <p> <strong>Sábado</strong> 10:00 - 17:00</p>
-            <p> <strong>Domingo</strong> 11:00 - 16:00</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br>
+  
 
   <div class="container-fluid linha">
     <div class="row">
@@ -110,10 +79,43 @@
               <p>Duração 4 horas</p>
               <p>Guia de áudio opcional</p>
               <hr>
-              <h5 class="card-title">Bilhetes</h5> <br>
+              <h5 class="card-title">Bilhetes</h5>
               <button type="button" class="btn btn-custom2" data-toggle="modal" data-target="#ticketModal">Ver
                 Bilhetes</button>
-
+                <br>
+                <br><hr>
+                <div class="horario-container">
+                  <h5>Horário</h5>
+                  <div class="status">
+                    <span>{{ statusText }}</span> <p></p>
+                    <!-- Botão para abrir o modal -->
+                    <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#horariomodal">Ver horários</button>
+                  </div>
+                  
+                  <!-- Modal Horário-->
+                  <div class="modal fade" id="horariomodal" tabindex="-1" role="dialog" aria-labelledby="horariomodalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="horariomodalLabel">Horário</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p> <strong>Segunda-feira</strong> 08:00 - 19:00</p>
+                          <p> <strong>Terça-feira</strong> 08:00 - 19:00</p>
+                          <p> <strong>Quarta-feira</strong> 08:00 - 19:00</p>
+                          <p> <strong>Quinta-feira</strong> 08:00 - 19:00</p>
+                          <p> <strong>Sexta-feira</strong> 08:00 - 19:00</p>
+                          <p> <strong>Sábado</strong> 10:00 - 17:00</p>
+                          <p> <strong>Domingo</strong> 11:00 - 16:00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
