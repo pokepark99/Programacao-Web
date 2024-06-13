@@ -2,47 +2,17 @@
   <h1>Museu Marítimo Nacional Australiano</h1>
   <h3>Marítimo</h3>
 
-  <img class="star" src="assets/images/StarFilled.png" alt="Star">
-  <img class="star" src="assets/images/StarFilled.png" alt="Star">
-  <img class="star" src="assets/images/StarFilled.png" alt="Star">
-  <img class="star" src="assets/images/StarFilled.png" alt="Star">
-  <img class="star" src="assets/images/StarBlank.png" alt="Star">
-
+  <div class="star-container">
+    <img class="star" src="assets/images/StarFilled.png" alt="Star">
+    <img class="star" src="assets/images/StarFilled.png" alt="Star">
+    <img class="star" src="assets/images/StarFilled.png" alt="Star">
+    <img class="star" src="assets/images/StarFilled.png" alt="Star">
+    <img class="star" src="assets/images/StarBlank.png" alt="Star"> 
+  </div>
   <br>
 
   <script src="script.js"></script>
 
-  <div class="horario-container">
-    <h2>Horário</h2>
-    <div class="status">
-      <span>{{ statusText }}</span>
-      <!-- Botão para abrir o modal -->
-      <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#horariomodal">Ver horários</button>
-    </div>
-    <!-- Modal Horário-->
-    <div class="modal fade" id="horariomodal" tabindex="-1" role="dialog" aria-labelledby="horariomodalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="horariomodalLabel">Horário</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p> <strong>Segunda-feira</strong> 09:30 - 18:00</p>
-            <p> <strong>Terça-feira</strong> 09:30 - 18:00</p>
-            <p> <strong>Quarta-feira</strong> 09:30 - 18:00</p>
-            <p> <strong>Quinta-feira</strong> 09:30 - 18:00</p>
-            <p> <strong>Sexta-feira</strong> 09:30 - 18:00</p>
-            <p> <strong>Sábado</strong> 09:30 - 18:00</p>
-            <p> <strong>Domingo</strong> 09:30 - 18:00</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   <br>
 
   <div class="container-fluid linha">
@@ -102,9 +72,47 @@
           <!-- Caixa de informações à direita -->
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Bilhetes</h5> <br>
+              <h5 class="card-title">Sobre este Memorial </h5>
+              <p>Duração 4/5 horas</p>
+              <p>Guia de áudio opcional</p>
+              <hr>
+              <h5 class="card-title">Bilhetes</h5>
               <button type="button" class="btn btn-custom2" data-toggle="modal" data-target="#ticketModal">Ver
                 Bilhetes</button>
+                <br>
+                <br><hr>
+                <div class="horario-container">
+                  <h5>Horário</h5>
+                  <div class="status">
+                    <span>{{ statusText }}</span> <p></p>
+                    <!-- Botão para abrir o modal -->
+                    <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#horariomodal">Ver horários</button>
+                  </div>
+                  
+                  <!-- Modal Horário-->
+                  <div class="modal fade" id="horariomodal" tabindex="-1" role="dialog" aria-labelledby="horariomodalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="horariomodalLabel">Horário</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p> <strong>Segunda-feira</strong> 09:00 - 16:00</p>
+                          <p> <strong>Terça-feira</strong> 09:00 - 16:00</p>
+                          <p> <strong>Quarta-feira</strong> 09:00 - 16:00</p>
+                          <p> <strong>Quinta-feira</strong> 09:00 - 16:00</p>
+                          <p> <strong>Sexta-feira</strong> 09:00 - 16:00</p>
+                          <p> <strong>Sábado</strong> 11:00 - 14:00</p>
+                          <p> <strong>Domingo</strong> 13:00 - 17:00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
@@ -209,29 +217,44 @@
   </p>
 
   <!-- Seção do catálogo de obras -->
+  
+
   <div class="row mt-5">
-    <div class="col-md-6">
-      <h2>Obras Mais Procuradas</h2>
-      <p><strong>SY Ena</strong>
-        - WM Ford Boatbuilders; Walter Reeks - 1900 <br>
-        O SY Ena é um luxuoso iate a vapor construído em 1900 para o rico empresário Thomas Dibbs. Atualmente está
-        instalado no Museu Marítimo Nacional da Austrália, servindo como um exemplo notável da opulência marítima do
-        início do século XX e fornecendo informações sobre a herança marítima da Austrália.
-      </p>
-      <p><strong>Mayflower</strong>
-        - Wilson and Burkett - 1884 <br>
-        O Mayflower, um navio histórico famoso por transportar peregrinos para o Novo Mundo em 1620, é destaque no Museu
-        Marítimo Nacional Australiano. Os visitantes podem explorar exposições e artefatos que mostram a jornada do
-        Mayflower e seu significado na história marítima, oferecendo informações sobre o início da exploração e
-        colonização europeia.
-      </p>
-      <p><strong>Thistle</strong>
-        - J R Jones - 1903 <br>
-        O Thistle é um modelo de navio histórico instalado no Museu Marítimo Nacional da Austrália, representando um
-        artefato significativo da história marítima. Como um modelo em escala meticulosamente elaborado, o Thistle
-        oferece aos visitantes informações sobre o design, a construção e o legado marítimo dos navios à vela durante
-        sua época.
-      </p>
+    <div class="col-md-6 ">
+      <h2>Obras mais procuradas</h2> <br>
+      <div class="image-text-item">
+        <img class="d-block shadow-1-strong rounded"
+             src="assets\images\Maritime\Top3\SY ENA.jpg"
+             alt="SY Ena">
+             <p><strong>SY Ena</strong>
+              - WM Ford Boatbuilders; Walter Reeks - 1900 <br>
+              O SY Ena é um luxuoso iate a vapor construído em 1900 para o rico empresário Thomas Dibbs. Atualmente está
+              instalado no Museu Marítimo Nacional da Austrália, servindo como um exemplo notável da opulência marítima do
+              início do século XX e fornecendo informações sobre a herança marítima da Austrália.
+            </p></div>
+    
+    <div class="image-text-item">
+      <img class="d-block shadow-1-strong rounded"
+           src="assets\images\Maritime\Top3\Mayflower.jpeg"
+           alt="Mayflower">
+           <p><strong>Mayflower</strong>
+            - Wilson and Burkett - 1884 <br>
+            O Mayflower, um navio histórico famoso por transportar peregrinos para o Novo Mundo em 1620, é destaque no Museu
+            Marítimo Nacional Australiano. Os visitantes podem explorar exposições e artefatos que mostram a jornada do
+            Mayflower e seu significado na história marítima, oferecendo informações sobre o início da exploração e
+            colonização europeia.
+          </p></div>
+    <div class="image-text-item">
+      <img class="d-block shadow-1-strong rounded"
+          src="assets\images\Maritime\Top3\Thistle.jpeg"
+          alt="Thistle">
+          <p><strong>Thistle</strong>
+            - J R Jones - 1903 <br>
+            O Thistle é um modelo de navio histórico instalado no Museu Marítimo Nacional da Austrália, representando um
+            artefato significativo da história marítima. Como um modelo em escala meticulosamente elaborado, o Thistle
+            oferece aos visitantes informações sobre o design, a construção e o legado marítimo dos navios à vela durante
+            sua época.
+          </p>
     </div>
   </div>
 
@@ -241,10 +264,12 @@
   <!-- Seção da localização -->
   <div class="row mt-5">
     <div class="col-md-6">
-      <h2>Localização:</h2>
-      <p>2 Murray St </p>
-      <p>Sydney NSW 2000</p>
-      <p>Australia</p>
+      <h2>Contactos:</h2>
+        <p>Questões Gerais: info&#64;sea.museum</p>
+        <p>Telefone: +61 2 9298 3777</p>
+        <p>Fax: +61 2 9298 3780</p>
+        <p>Visite o site: <a href="https://www.sea.museum/">aqui</a></p>
+      
     </div>
   </div>
   <div class="container-fluid">
@@ -255,12 +280,11 @@
           style="border: 1px solid black;"></iframe>
       </div>
       <div class="col-md-6 contacts">
-        <h2>Contactos:</h2>
-        <p>Questões Gerais: info&#64;sea.museum</p>
-        <p>Telefone: +61 2 9298 3777</p>
-        <p>Fax: +61 2 9298 3780</p>
-        <p>Visite o site: <a href="https://www.sea.museum/">aqui</a></p>
-      </div>
+        
+        <h2>Localização:</h2>
+      <p>2 Murray St </p>
+      <p>Sydney NSW 2000</p>
+      <p>Australia</p></div>
     </div>
   </div>
 
@@ -397,4 +421,4 @@
 
   <br><br>
 
-</div>
+</div><br><br>

@@ -1,57 +1,73 @@
 :host {
     display: block;
     background-color: #9c6a72;
-}
-
-h1 {
-    margin-top: 10px;
+  }
+  
+  
+  .image-text-item {
+    display: flex;
+    align-items: center; /* Alinha a imagem e o texto verticalmente no centro */
+    margin-bottom: 20px; /* Espaço entre as seções */
+  }
+  
+  .image-text-item img {
+    max-width: 450px; /* Define a largura máxima da imagem */
+    height: auto;
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+  }
+  
+  .image-text-item p {
+    margin: 0; /* Remove a margem padrão do parágrafo */
+  }
+  h1 {
+    margin-top: 0px;
     margin-bottom: 20px;
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-h3 {
+  }
+  
+  h3 {
     margin-top: 0px;
     margin-bottom: 10px;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.btn-custom {
-    background-color: #5934c8;
+  }
+  
+  .btn-custom {
+    background-color: #EADACD;
     border-color: #060606;
-    color: white;
-}
-
-.btn-custom2 {
-    background-color: #5934c8;
+    color: #000000;
+  }
+  
+  .btn-custom2 {
+    background-color: #EADACD;
     border-color: #060606;
-    color: white;
-}
-
-.btn-custom3 {
-    background-color: #5934c8;
+    color: #000000;
+  }
+  
+  .btn-custom3 {
+    background-color: #EADACD;
     border-color: #060606;
-    color: white;
-}
-
-.carousel-indicators {
+    color: #000000;
+  }
+  
+  .carousel-indicators {
     padding: 3px;
     /* Adiciona um pouco de espaço ao redor das miniaturas */
     border-radius: 3cm;
     /* Adiciona cantos arredondados */
-}
-
-.carousel-indicators button {
+  }
+  
+  .carousel-indicators button {
     margin: 5px;
     /* Adiciona espaço entre as miniaturas */
-}
-
-.carousel-indicators .active {
-    background-color: rgb(201, 198, 250);
-}
-
-.modal-header .close {
+  }
+  
+  .carousel-indicators .active {
+    background-color: #E7E2D4;
+  }
+  
+  .modal-header .close {
     position: absolute;
     top: 15px;
     right: 15px;
@@ -60,32 +76,40 @@ h3 {
     background-color: #fff;
     border: none;
     opacity: 1;
-}
-
-.star {
+  }
+  
+  .star-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Espaçamento opcional acima e abaixo */
+  }
+  
+  .star {
+    
     height: 20px;
     width: 20px;
     margin: 2px;
     margin-bottom: 20px;
-}
-
-h2 {
+  }
+  
+  h2 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.cont {
+  }
+  
+  .cont {
     padding: 20px;
-}
-
-/* Estilos para o carrossel e miniaturas */
-.carousel {
+  }
+  
+  /* Estilos para o carrossel e miniaturas */
+  .carousel {
     max-width: 800px;
     /* Defina uma largura máxima para o carrossel */
     margin: 0 auto;
     /* Centralize horizontalmente o carrossel */
-}
-
-.carousel-image {
+  }
+  
+  .carousel-image {
     max-height: 400px;
     /* Defina a altura máxima para as imagens no carrossel */
     width: auto;
@@ -94,10 +118,10 @@ h2 {
     /* Centralize horizontalmente as imagens no carrossel */
     object-fit: contain;
     /* Ajuste a imagem mantendo a proporção */
-}
-
-.carousel-control-prev,
-.carousel-control-next {
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
     width: auto;
     /* Defina a largura para automático para que as setas ocupem apenas o espaço necessário */
     margin-left: 0;
@@ -106,40 +130,40 @@ h2 {
     /* Reduza a margem direita */
     background-color: transparent;
     /* Remova o fundo */
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
     background-color: black;
     /* Altere a cor das setas */
-}
-
-.carousel-control-prev {
+  }
+  
+  .carousel-control-prev {
     left: -30px;
     /* Ajuste a posição da seta "prev" */
-}
-
-.carousel-control-next {
+  }
+  
+  .carousel-control-next {
     right: -30px;
     /* Ajuste a posição da seta "next" */
-}
-
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
+  }
+  
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
     background-color: rgba(0, 0, 0, 0.5);
     /* Adicione uma transparência ao passar o mouse */
-}
-
-.thumbnails-container {
+  }
+  
+  .thumbnails-container {
     text-align: center;
     /* Centralize as miniaturas horizontalmente */
     white-space: nowrap;
     /* Impede que as miniaturas quebrem para a linha seguinte */
     overflow-x: auto;
     /* Adiciona uma barra de rolagem horizontal caso as miniaturas excedam a largura do container */
-}
-
-.thumbnail {
+  }
+  
+  .thumbnail {
     cursor: pointer;
     height: 80px;
     /* Reduza a altura das miniaturas */
@@ -148,83 +172,84 @@ h2 {
     /* Reduza o espaço entre as miniaturas */
     display: inline-block;
     /* Faça as miniaturas ficarem lado a lado */
-}
-
-.thumbnail:last-child {
+  }
+  
+  .thumbnail:last-child {
     margin-right: 0;
     /* Remova a margem direita da última miniatura */
-}
-
-.thumbnail:hover {
+  }
+  
+  .thumbnail:hover {
     opacity: 0.7;
-}
-
-/* Limitar a altura da imagem principal do carrossel */
-.carousel-item {
+  }
+  
+  /* Limitar a altura da imagem principal do carrossel */
+  .carousel-item {
     max-height: 400px;
     /* Ajuste conforme necessário */
     overflow: hidden;
-}
-
-#avaliacoes-container {
+  }
+  
+  #avaliacoes-container {
     max-height: 400px;
     /* Defina a altura máxima conforme necessário */
     overflow-y: scroll;
     border: 1px solid #ccc;
-    /* Opcional */
+    
     padding: 10px;
-    /* Opcional */
-}
-
-.avaliacao {
+    
+  }
+  
+  .avaliacao {
     margin-bottom: 10px;
     border-bottom: 1px solid #ccc;
-    /* Opcional */
     padding-bottom: 10px;
-    /* Opcional */
-}
-
-.modal .form-group {
+    
+  }
+  
+  .modal .form-group {
     margin-bottom: 15px;
-}
-
-.avaliacoes {
+  }
+  
+  .avaliacoes {
     border: 2px solid black;
     padding: 20px;
     border-radius: 15px;
     width: calc(50%);
-}
-
-.avaliacao {
+    background-color: #fff;
+  }
+  
+  .avaliacao {
     border: 1px solid black;
     padding: 10px;
     border-radius: 15px;
-}
-
-
-
-.horario-container {
-    text-align: center;
-}
-
-.status {
+    background-color: #fff;
+  }
+  
+  
+  
+  .horario-container {
+    text-align: left;
+  }
+  
+  .status {
     margin: 10px 0;
-}
-
-button {
+  }
+  
+  button {
     padding: 5px 10px;
     border: none;
-    background-color: #007BFF;
+    background-color: #9c6a72;
     color: white;
     cursor: pointer;
     border-radius: 5px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-.popup {
+  }
+  
+  button:hover {
+    background-color: #9c6a72;
+  }
+  
+  .popup {
     position: fixed;
     top: 0;
     left: 0;
@@ -234,28 +259,28 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.popup-content {
+  }
+  
+  .popup-content {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     text-align: left;
-}
-
-.popup-content h3 {
+  }
+  
+  .popup-content h3 {
     margin-top: 0;
-}
-
-.popup-content ul {
+  }
+  
+  .popup-content ul {
     list-style-type: none;
     padding: 0;
-}
-
-.popup-content li {
+  }
+  
+  .popup-content li {
     margin: 5px 0;
-}
-
-a {
+  }
+  
+  a {
     color: #E7E2D4;
-}
+  }

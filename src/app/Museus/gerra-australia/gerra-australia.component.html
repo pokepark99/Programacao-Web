@@ -2,12 +2,13 @@
   <h1>Memorial de Guerra Australiano</h1>
   <h3>Militar</h3>
 
-  <img class="star" src="assets/images/StarFilled.png" alt="Star">
-  <img class="star" src="assets/images/StarFilled.png" alt="Star">
-  <img class="star" src="assets/images/StarFilled.png" alt="Star">
-  <img class="star" src="assets/images/StarFilled.png" alt="Star">
-  <img class="star" src="assets/images/StarBlank.png" alt="Star">
-
+  <div class="star-container">
+    <img class="star" src="assets/images/StarFilled.png" alt="Star">
+    <img class="star" src="assets/images/StarFilled.png" alt="Star">
+    <img class="star" src="assets/images/StarFilled.png" alt="Star">
+    <img class="star" src="assets/images/StarFilled.png" alt="Star">
+    <img class="star" src="assets/images/StarBlank.png" alt="Star"> 
+  </div>
   <br>
 
   <script src="script.js"></script>
@@ -206,42 +207,56 @@
 
   <!-- Seção do catálogo de obras -->
   <div class="row mt-5">
-    <div class="col-md-6">
-      <h2>Obras mais procuradas</h2>
-      <p>
-        <strong>The Roll of Honour</strong>
-        - Louise Burmester - 1999 <br>
-        Uma parede que lista os nomes de todos os australianos que
-        morreram em serviço militar desde 1885.
-        Este é um local de profundo significado para os visitantes que desejam prestar homenagem aos soldados caídos.
-      </p>
+    <div class="col-md-6 ">
+      <h2>Obras mais procuradas</h2> <br>
+      <div class="image-text-item">
+        <img class="d-block shadow-1-strong rounded"
+             src="assets/images/Australian War Memorial/top3/TRH.jpg"
+             alt="The Roll of Honour">
+        <p><strong>The Roll of Honour</strong>
+            - Louise Burmester - 1999 <br>
+            Uma parede que lista os nomes de todos os australianos que morreram em serviço militar desde 1885.
+            Este é um local de profundo significado para os visitantes que desejam prestar homenagem aos soldados caídos.
+        </p>
+      </div>
+    
+    <div class="image-text-item">
+      <img class="d-block shadow-1-strong rounded"
+           src="assets/images/Australian War Memorial/top3/C.jpg"
+           alt="The Last Post Ceremony">
       <p><strong>The Last Post Ceremony</strong>
-        - Emma Campbell - 2018 <br>
-        Embora não seja uma obra de arte física, esta cerimônia
-        diária é uma experiência emocionante e reverente, onde os visitantes podem testemunhar a leitura dos nomes dos
-        soldados australianos falecidos e ouvir a trombeta tocando o "Último Posto".
+          - Emma Campbell - 2018 <br>
+          Embora não seja uma obra de arte física, esta cerimônia
+          diária é uma experiência emocionante e reverente, onde os visitantes podem testemunhar a leitura dos nomes dos
+          soldados australianos falecidos e ouvir a trombeta tocando o "Último Posto".
       </p>
+    </div>
+    <div class="image-text-item">
+      <img class="d-block shadow-1-strong rounded"
+          src="assets/images/Australian War Memorial/top3/HM.jpg"
+          alt="Hall of Memory">
       <p><strong>Hall of Memory</strong>
-        - Australian War Memorial - 2011 <br>
-        Esta sala central abriga o Memorial da Guerra Australiana e é
-        adornada com mosaicos, estátuas e vitrais que representam os serviços militares e as campanhas nas quais os
-        australianos estiveram envolvidos.</p>
+          - Australian War Memorial - 2011 <br>
+          Esta sala central abriga o Memorial da Guerra Australiana e é
+          adornada com mosaicos, estátuas e vitrais que representam os serviços militares e as campanhas nas quais os
+          australianos estiveram envolvidos.
+      </p>
     </div>
   </div>
 
   <br>
   <h2>Museu +</h2>
-  Eileen (Joan) Brain entrevistada por Alison Viney Houghton para seu projeto de história oral "The Age of Innocence
-  1937-1947". A entrevista cobre a experiência de Joan Brain como uma jovem que viveu a Segunda Guerra Mundial,
-  abordando assuntos como deixar a escola aos 14 anos, trabalho, estilo de vida, racionamento, black outs e cortinas
-  blackout, abrigos antiaéreos e lugares onde ela morou na Tasmânia.
+    <p>Eileen (Joan) Brain entrevistada por Alison Viney Houghton para seu projeto de história oral "The Age of Innocence
+      1937-1947". <br>A entrevista cobre a experiência de Joan Brain como uma jovem que viveu a Segunda Guerra Mundial,
+      abordando assuntos como deixar a escola aos 14 anos, trabalho, estilo de vida, racionamento, black outs e cortinas
+      blackout, abrigos antiaéreos e lugares onde ela morou na Tasmânia.</p>
   <br><br>
   <audio controls>
     <source src="assets/1.mp3" type="audio/mp3">
-  </audio> <br>
+  </audio> <br><br><br>
   <audio controls>
-    <source src="assets/1.2.mp3" type="audio/mp3">
-  </audio>
+    <source src="assets/1.mp3" type="audio/mp3">
+  </audio> <br><br><br>
 
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -249,32 +264,33 @@
 
   <!-- Seção da localização -->
   <div class="row mt-5">
-    <div class="col-md-6">
-      <h2>Localização</h2>
-      <p>Treloar Crescent </p>
-      <p>Campbell ACT 2612</p>
-      <p>Australia</p>
+    <div class="col-md-6 contacts">
+      <h2>Contactos:</h2>
+      <p>Questões Gerais: info&#64;awm.gov.au</p>
+      <p>Telefone: +61 (02) 6243 4211</p>
+      <p>Visite o site: <a href="https://www.awm.gov.au/">aqui</a></p>
     </div>
+    
   </div>
-  <div class="container-fluid">
+  <div class="container-fluid ml-2">
     <div class="row contact-map-container mt-5">
       <div class="col-md-6 map">
         <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
           src="https://www.openstreetmap.org/export/embed.html?bbox=149.14843,-35.279,149.14843,-35.283&amp;layer=mapnik&amp;marker=-35.281030400967666,149.1484327"
           style="border: 1px solid black;"></iframe>
       </div>
-      <div class="col-md-6 contacts">
-        <h2>Contactos:</h2>
-        <p>Questões Gerais: info&#64;awm.gov.au</p>
-        <p>Telefone: +61 (02) 6243 4211</p>
-        <p>Visite o site: <a href="https://www.awm.gov.au/">aqui</a></p>
+      <div class="col-md-6">
+        <h2>Localização</h2>
+        <p>Treloar Crescent </p>
+        <p>Campbell ACT 2612</p>
+        <p>Australia</p>
       </div>
     </div>
   </div>
 
   <br>
   <br>
-  <div class="avaliacoes">
+  <div class="avaliacoes ml-4">
     <h2>Avaliações</h2>
     <img class="star" src="assets/images/StarFilled.png" alt="Star">
     <img class="star" src="assets/images/StarFilled.png" alt="Star">
@@ -402,6 +418,7 @@
     </div>
   </div>
 
-  <br><br>
+  
 
 </div>
+<br><br>
