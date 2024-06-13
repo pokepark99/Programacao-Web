@@ -1,49 +1,17 @@
 <div class="container-fluid">
-  <h1>Museu de Ciência e Tecnologia de Xangai</h1>
+  <br><h1>Museu de Ciência e Tecnologia de Xangai</h1>
   <h3>Ciência e Tecnologia</h3>
 
-  <img class="star" src="assets/images/StarFilled.png" alt="Star">
-  <img class="star" src="assets/images/StarFilled.png" alt="Star">
-  <img class="star" src="assets/images/StarFilled.png" alt="Star">
-  <img class="star" src="assets/images/StarFilled.png" alt="Star">
-  <img class="star" src="assets/images/StarBlank.png" alt="Star">
-
+  <<div class="star-container">
+    <img class="star" src="assets/images/StarFilled.png" alt="Star">
+    <img class="star" src="assets/images/StarFilled.png" alt="Star">
+    <img class="star" src="assets/images/StarFilled.png" alt="Star">
+    <img class="star" src="assets/images/StarFilled.png" alt="Star">
+    <img class="star" src="assets/images/StarBlank.png" alt="Star"> 
+  </div>
   <br>
 
   <script src="script.js"></script>
-
-  <div class="horario-container">
-    <h2>Horário</h2>
-    <div class="status">
-      <span>{{ statusText }}</span>
-      <!-- Botão para abrir o modal -->
-      <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#horariomodal">Ver horários</button>
-    </div>
-    <!-- Modal Horário-->
-    <div class="modal fade" id="horariomodal" tabindex="-1" role="dialog" aria-labelledby="horariomodalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="horariomodalLabel">Horário</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p> <strong>Segunda-feira</strong> Encerrado</p>
-            <p> <strong>Terça-feira</strong> 09:00 - 17:00</p>
-            <p> <strong>Quarta-feira</strong> 09:00 - 17:00</p>
-            <p> <strong>Quinta-feira</strong> 09:00 - 17:00</p>
-            <p> <strong>Sexta-feira</strong> 09:00 - 17:00</p>
-            <p> <strong>Sábado</strong> 09:00 - 17:00</p>
-            <p> <strong>Domingo</strong> 9:00 - 17:00</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br>
 
   <div class="container-fluid linha">
     <div class="row">
@@ -101,16 +69,51 @@
           <!-- Caixa de informações à direita -->
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Bilhetes</h5> <br>
+              <h5 class="card-title">Sobre este Museu </h5>
+              <p>Duração 4 horas</p>
+              <p>Guia de áudio opcional</p>
+              <hr>
+              <h5 class="card-title">Bilhetes</h5>
               <button type="button" class="btn btn-custom2" data-toggle="modal" data-target="#ticketModal">Ver
                 Bilhetes</button>
-
+                <br>
+                <br><hr>
+                <div class="horario-container">
+                  <h5>Horário</h5>
+                  <div class="status">
+                    <span>{{ statusText }}</span> <p></p>
+                    <!-- Botão para abrir o modal -->
+                    <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#horariomodal">Ver horários</button>
+                  </div>
+                  
+                  <!-- Modal Horário-->
+                  <div class="modal fade" id="horariomodal" tabindex="-1" role="dialog" aria-labelledby="horariomodalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="horariomodalLabel">Horário</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p> <strong>Segunda-feira</strong> 08:00 - 16:00</p>
+                          <p> <strong>Terça-feira</strong> 08:00 - 16:00</p>
+                          <p> <strong>Quarta-feira</strong> 08:00 - 16:00</p>
+                          <p> <strong>Quinta-feira</strong> 08:00 - 16:00</p>
+                          <p> <strong>Sexta-feira</strong> 08:00 - 16:00</p>
+                          <p> <strong>Sábado</strong> 10:00 - 14:00</p>
+                          <p> <strong>Domingo</strong> 10:00 - 15:00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
   <!-- End row -->
   <!-- Modal para mostrar os bilhetes -->
   <div class="modal fade" id="ticketModal" tabindex="-1" role="dialog" aria-labelledby="ticketModalLabel"
@@ -138,7 +141,7 @@
     </div>
   </div>
 
-  <h2>Historia</h2>
+  <h2>História</h2>
   <p>
     O Museu de Ciência e Tecnologia de Xangai é um testemunho do compromisso da China com a inovação e o avanço
     científico. Fundado em 2001, representa o culminar dos esforços para promover a educação e a exploração científica
@@ -169,39 +172,54 @@
   </p>
 
   <!-- Seção do catálogo de obras -->
+ 
+
   <div class="row mt-5">
-    <div class="col-md-6">
-      <h2>Obras Mais Procuradas</h2>
-      <p><strong>Home on Earth</strong>
-        <br>
-        O boom populacional e o rápido crescimento da produtividade levaram a uma série de problemas ambientais
-        ecológicos. Como podemos lidar com eles? Buscar juntos uma convivência harmoniosa com a natureza.
-      </p>
-      <p><strong>Information Era</strong>
-        <br>
-        O desenvolvimento da tecnologia da informação mudou muito a maneira como vivemos, trabalhamos e estudamos.
-        Tecnologias como a Internet, a identificação de imagens, o reconhecimento de voz, a realidade virtual e a
-        simulação computacional estão a tornar-se uma parte indispensável da nossa vida.
-      </p>
-      <p><strong>World Of Robots</strong>
-        <br>
-        O desenvolvimento da tecnologia da informação mudou muito a maneira como vivemos, ganhamos e estudamos.
-        Tecnologias como a Internet, a identificação de imagens, o reconhecimento de voz, a realidade virtual e a
-        simulação computacional estão a tornar-se uma parte indispensável da nossa vida.
-      </p>
+    <div class="col-md-6 ">
+      <h2>Obras mais procuradas</h2> <br>
+      <div class="image-text-item">
+        <img class="d-block shadow-1-strong rounded"
+             src="assets\images\Xangai\Top 3\HomeOnEarth2.jpg"
+             alt="Home on Earth<">
+        
+          <p><strong>Home on Earth</strong>
+            <br>
+            O boom populacional e o rápido crescimento da produtividade levaram a uma série de problemas ambientais
+            ecológicos. Como podemos lidar com eles? Buscar juntos uma convivência harmoniosa com a natureza.
+          </p></div>
+    
+    <div class="image-text-item">
+      <img class="d-block shadow-1-strong rounded"
+           src="assets\images\Xangai\Top 3\InformationEra.jpg"
+           alt="Information Era">
+           <p><strong>Information Era</strong>
+            <br>
+            O desenvolvimento da tecnologia da informação mudou muito a maneira como vivemos, trabalhamos e estudamos.
+            Tecnologias como a Internet, a identificação de imagens, o reconhecimento de voz, a realidade virtual e a
+            simulação computacional estão a tornar-se uma parte indispensável da nossa vida.
+          </p></div>
+    <div class="image-text-item">
+      <img class="d-block shadow-1-strong rounded"
+          src="assets\images\Xangai\Top 3\WorldOfRobots.jpg"
+          alt="World Of Robots">
+          <p><strong>World Of Robots</strong>
+            <br>
+            O desenvolvimento da tecnologia da informação mudou muito a maneira como vivemos, ganhamos e estudamos.
+            Tecnologias como a Internet, a identificação de imagens, o reconhecimento de voz, a realidade virtual e a
+            simulação computacional estão a tornar-se uma parte indispensável da nossa vida.
+          </p>
     </div>
   </div>
-
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
   <!-- Seção da localização -->
   <div class="row mt-5">
     <div class="col-md-6">
-      <h2>Localização:</h2>
-      <p>2000 Shiji Blvd </p>
-      <p>Pudong, Shanghai</p>
-      <p>China</p>
+      <h2>Contactos:</h2>
+      <p>Telefone: +86 21 6854 2000</p>
+      <p>Visite o site: <a href="https://en.sstm.org.cn/">aqui</a></p>
+    
     </div>
   </div>
   <div class="container-fluid">
@@ -212,16 +230,17 @@
           style="border: 1px solid black;"></iframe>
       </div>
       <div class="col-md-6 contacts">
-        <h2>Contactos:</h2>
-        <p>Telefone: +86 21 6854 2000</p>
-        <p>Visite o site: <a href="https://en.sstm.org.cn/">aqui</a></p>
-      </div>
+        <h2>Localização:</h2>
+        <p>2000 Shiji Blvd </p>
+        <p>Pudong, Shanghai</p>
+        <p>China</p>
+        </div>
     </div>
   </div>
 
   <br>
   <br>
-  <div class="avaliacoes">
+  <div class="avaliacoes ml-3">
     <h2>Avaliações</h2>
     <img class="star" src="assets/images/StarFilled.png" alt="Star">
     <img class="star" src="assets/images/StarFilled.png" alt="Star">
@@ -348,6 +367,6 @@
       </div>
     </div>
   </div>
-  <br><br>
+  <br><br><p></p><p></p>
 
 </div>

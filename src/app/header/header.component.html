@@ -1,0 +1,37 @@
+<header class="header">
+    <div class="translate-container">
+      <button class="translate-pt" (click)="traduzirPagina('pt')"></button>
+      <button class="translate-en" (click)="traduzirPagina('en')"></button>
+    </div>
+  
+    <div class="row">
+      <h1 style="margin: 0; position: absolute; bottom: 10px; left: 10px; font-size: 80px;">MuseHub</h1>
+  
+      <div class="nav-container">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link" href="">{{ 'HOME' | translate }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about">{{ 'ABOUT' | translate }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">{{ 'CONTACTS' | translate }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login"> <i class="fas fa-user"></i></a>
+          </li>
+        </ul>
+      </div>
+  
+      <div style="position: absolute; bottom: 10px; right: 10px;" class="search-container">
+        <div class="input-group" style="width: 300px;">
+        <input type="text" class="form-control" [placeholder]="searchPlaceholder">
+          <button class="btn btn-dark" type="button">
+            <img src="../assets/images/search.png" width="20px">
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  

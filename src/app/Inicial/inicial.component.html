@@ -1,7 +1,7 @@
 <!--CORPO-->
 <br>
 <br>
-<h1>CATÁLOGO</h1>
+<h1>{{ 'CATALOG' | translate }}</h1>
 <br><br>
 <main class="container-fluid">
     <div class="museus">
@@ -9,26 +9,20 @@
         <div class="museu">
             <div class="amostra">
                 <a href="guerraAustralia"><img src="../assets/images/Australian War Memorial.jpg"
-                        alt="Memorial de Guerra Australiano" height="200px" width="300px"></a>
-                <p><b>Memorial de Guerra Australiano</b></p>
-                <p class="saber" style="color: white;">Saber mais v</p>
+                        alt="{{ 'AUSTRALIAN_WAR_MEMORIAL' | translate }}" height="200px" width="300px"></a>
+                <p><b>{{ 'AUSTRALIAN_WAR_MEMORIAL' | translate }}</b></p>
+                <p class="saber" style="color: white;">{{ 'KNOW_MORE' | translate }}</p>
             </div>
             <div class="escondido">
                 <p class="descricao">
-                    O Memorial de Guerra Australiano em Canberra comemora
-                    os sacrifícios dos militares australianos. Combina um
-                    santuário, um museu de classe mundial e um extenso arquivo,
-                    apresentando artefatos, dioramas e exposições da história
-                    militar da Austrália. </p>
+                    {{ 'AUSTRALIAN_WAR_DESC' | translate }}
+                </p>
 
                 <p class="descricao">
-                    O Memorial também apresenta o Quadro de Honra, listando
-                    os nomes dos soldados mortos, e organiza cerimônias para
-                    homenagear seu legado. É uma importante instituição
-                    cultural e histórica dedicada à memória e à educação. </p>
+                    {{ 'AUSTRALIAN_WAR_DESC2' | translate }} </p>
 
                 <div class="esquerda">
-                    <a href="guerraAustralia" class="btn btn-link">Saber mais ></a>
+                    <a href="guerraAustralia" class="btn btn-link">{{ 'KNOW_MORE' | translate }}></a>
                 </div>
             </div>
         </div>
@@ -38,22 +32,16 @@
             <div class="amostra">
                 <a href="field"><img src="../assets/images/FieldMuseum.jpg" alt="Museu Field" height="200px"
                         width="300px"></a>
-                <p><b>Museu Field</b></p>
-                <p class="saber" style="color: white;">Saber mais v</p>
+                <p><b>{{ 'MUSEUM_FIELD' | translate }}</b></p>
+                <p class="saber" style="color: white;">{{ 'KNOW_MORE' | translate }}</p>
             </div>
             <div class="escondido">
                 <p class="descricao">
-                    O Field Museum em Chicago tem suas raízes na Exposição Mundial da Colômbia de 1893. Inicialmente
-                    conhecido como Museu Colombiano de Chicago, foi renomeado como Museu Field de História Natural em
-                    1905, em homenagem ao seu principal benfeitor, Marshall Field. Ao longo dos anos, expandiu suas
-                    coleções e pesquisas, com foco em antropologia, botânica, geologia e zoologia. Expedições notáveis,
-                    como a Expedição Field Museum-East Greenland de 1932-1933, enriqueceram seu acervo. Hoje, o museu é
-                    líder global em pesquisa científica, educação e conservação, promovendo a compreensão do mundo
-                    natural e da diversidade cultural.
+                    {{ 'FIELD_DESC' | translate }}
                 </p>
 
                 <div class="esquerda">
-                    <a href="field" class="btn btn-link">Saber mais ></a>
+                    <a href="field" class="btn btn-link">></a>
                 </div>
             </div>
         </div>
@@ -143,13 +131,13 @@
 
     </div>
     <br>
-    <h1>EVENTOS</h1>
+    <br><h1>EVENTOS</h1><br>
     <div class="container-fluid">
         <div class="row justify-content-center d-flex align-items-center">
             <!--Nome do Evento-->
             <p class="Evento"><strong>Moonlight Sea Kayaking</strong></p>
             <!--Nome do Museu-->
-            <p>Museu Marítimo Nacional Australiano</p>
+            <p>Museu Marítimo Nacional Australiano</p><br><br>
             <!--Descricao-->
             <div class="col-md-6">
                 <div class="desc">
@@ -171,7 +159,7 @@
             </div>
         </div>
     </div>
-    <br>
+    <br><br><br>
     <div class="container-fluid">
         <div class="row justify-content-center d-flex align-items-center">
             <!--Nome do Evento-->
@@ -188,7 +176,7 @@
                     <a href="https://www.fieldmuseum.org/our-events/bug-bites/bug-bites" class="btn btn-primary">Ver
                         evento</a>
                 </div>
-            </div>
+            </div><br><br><br><br><br>
             <div class="col-md-6">
                 <!--Foto do Evento-->
                 <img class="star" src="assets/images/Eventos/BugBites.webp" alt="Bug Bites"
