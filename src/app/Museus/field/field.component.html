@@ -2,16 +2,51 @@
   <h1>Museu Field</h1>
   <h3>História Natural</h3>
 
+  <img class="star" src="assets/images/StarFilled.png" alt="Star">
+  <img class="star" src="assets/images/StarFilled.png" alt="Star">
+  <img class="star" src="assets/images/StarFilled.png" alt="Star">
+  <img class="star" src="assets/images/StarFilled.png" alt="Star">
+  <img class="star" src="assets/images/StarBlank.png" alt="Star">
 
-  <div class="star-container">
-    <img class="star" src="assets/images/StarFilled.png" alt="Star">
-    <img class="star" src="assets/images/StarFilled.png" alt="Star">
-    <img class="star" src="assets/images/StarFilled.png" alt="Star">
-    <img class="star" src="assets/images/StarFilled.png" alt="Star">
-    <img class="star" src="assets/images/StarBlank.png" alt="Star"> 
-  </div>
   <br>
 
+<<<<<<< HEAD
+=======
+  <div class="horario-container">
+    <h2>Horário</h2>
+    <div class="status">
+      <span>{{ statusText }}</span>
+      <!-- Botão para abrir o modal -->
+      <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#horariomodal">Ver horários</button>
+    </div>
+    <!-- Modal Horário-->
+    <div class="modal fade" id="horariomodal" tabindex="-1" role="dialog" aria-labelledby="horariomodalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="horariomodalLabel">Horário</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p> <strong>Segunda-feira</strong> 09:00 - 17:00</p>
+            <p> <strong>Terça-feira</strong> 09:00 - 17:00</p>
+            <p> <strong>Quarta-feira</strong> 09:00 - 17:00</p>
+            <p> <strong>Quinta-feira</strong> 09:00 - 17:00</p>
+            <p> <strong>Sexta-feira</strong> 09:00 - 17:00</p>
+            <p> <strong>Sábado</strong> 09:00 - 17:00</p>
+            <p> <strong>Domingo</strong> 09:00 - 17:00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+>>>>>>> parent of a98fce7 (j)
   <div class="container-fluid linha">
     <div class="row">
       <div class="cont col-md-6">
@@ -69,47 +104,18 @@
           <!-- Caixa de informações à direita -->
           <div class="card">
             <div class="card-body">
+<<<<<<< HEAD
               <h5 class="card-title">Sobre este Museu </h5>
               <p>Duração 4 horas</p>
               <p>Guia de áudio opcional</p>
               <hr>
               <h5 class="card-title">Bilhetes</h5>
+=======
+              <h5 class="card-title">Bilhetes</h5> <br>
+>>>>>>> parent of a98fce7 (j)
               <button type="button" class="btn btn-custom2" data-toggle="modal" data-target="#ticketModal">Ver
                 Bilhetes</button>
-                <br>
-                <br><hr>
-                <div class="horario-container">
-                  <h5>Horário</h5>
-                  <div class="status">
-                    <span>{{ statusText }}</span> <p></p>
-                    <!-- Botão para abrir o modal -->
-                    <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#horariomodal">Ver horários</button>
-                  </div>
-                  
-                  <!-- Modal Horário-->
-                  <div class="modal fade" id="horariomodal" tabindex="-1" role="dialog" aria-labelledby="horariomodalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="horariomodalLabel">Horário</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <p> <strong>Segunda-feira</strong> 08:00 - 16:00</p>
-                          <p> <strong>Terça-feira</strong> 08:00 - 16:00</p>
-                          <p> <strong>Quarta-feira</strong> 08:00 - 16:00</p>
-                          <p> <strong>Quinta-feira</strong> 08:00 - 16:00</p>
-                          <p> <strong>Sexta-feira</strong> 08:00 - 16:00</p>
-                          <p> <strong>Sábado</strong> 10:00 - 14:00</p>
-                          <p> <strong>Domingo</strong> 11:00 - 17:00</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
             </div>
           </div>
         </div>
@@ -129,9 +135,9 @@
           </button>
         </div>
         <div class="modal-body">
-          <p>Bilhete c/guia 16€</p>
-          <p>Bilhete normal 12€</p>
-          <p>Bilhete c/áudio (inglês) 26€</p>
+          <p>Bilhete Adulto 30$</p>
+          <p>Bilhete Criança 23$</p>
+          <p>Bilhete Estudante 27$</p>
         </div>
         <div class="modal-footer">
           <a href="https://www.fieldmuseum.org/visit" class="btn btn-primary">Comprar (site oficial)</a>
@@ -177,36 +183,49 @@
 
   <!-- Seção do catálogo de obras -->
   <div class="row mt-5">
-    <div class="col-md-6 ">
-      <h2>Obras mais procuradas</h2> <br>
-      <div class="image-text-item">
-        <img class="d-block shadow-1-strong rounded"
-             src="assets\images\Field\Top3\Sue.jpg"
-             alt="Sue">
-        <p><strong>Sue</strong>
-          ->Sue é o fóssil de Tyrannosaurus rex mais completo e bem preservado já encontrado. Descoberto em 1990, Sue tem atraído milhões de visitantes e é uma das peças centrais do museu. Com cerca de 12 metros de comprimento e 4 metros de altura, Sue é um testemunho impressionante da era dos dinossauros.</p>
-      </div>
-    
-    <div class="image-text-item">
-      <img class="d-block shadow-1-strong rounded"
-           src="assets\images\Field\Top3\Maximo.jpg"
-           alt="Maximo">
-      <p><strong>Maximo</strong>
-        ->O Maximo, o Mamute é um dos espécimes mais impressionantes e populares do Museu Field em Chicago. Ele é um esqueleto de mamute-lanoso que foi descoberto em 1926 em Indiana, nos Estados Unidos. </p>
-    </div>
-    <div class="image-text-item">
-      <img class="d-block shadow-1-strong rounded"
-          src="assets\images\Field\Top3\InsideAncientEgypt.jpg"
-          alt="Inside Ancient Egypt">
+    <div class="col-md-6">
+      <h2>Obras Mais Procuradas:</h2>
+      <p><strong>SUE the T. Rex</strong>
+        - 1990 - Sue Hendrickson<br>
+        SUE é o maior, mais completo e mais bem preservado fóssil de Tyrannosaurus rex já descoberto, medindo 12 metros
+        de comprimento e 4 metros de altura no quadril. Exibido no Field Museum desde 2000, SUE oferece informações
+        valiosas sobre a vida e o ambiente de um dos dinossauros mais emblemáticos.
+      </p>
+      <p><strong>Maximo the Titanosaur</strong>
+        - 2014 <br>
+        Máximo, o Titanossauro, é um elenco em tamanho real do Patagotitan mayorum, um dos maiores dinossauros já
+        encontrados, medindo 36 metros da cabeça à cauda. Suspenso no salão principal do museu, Máximo permite que os
+        visitantes caminhem sob sua enorme estrutura, maravilhando-se com a escala desses antigos gigantes.
+      </p>
       <p><strong>Inside Ancient Egypt</strong>
-        ->"Inside Ancient Egypt" é uma das mais famosas e cativantes do museu, oferecendo uma visão detalhada e imersiva da vida, cultura e práticas funerárias do antigo Egito. 
+        <br>
+        A exposição "Inside Ancient Egypt" no Field Museum recria o esplendor e a complexidade da antiga civilização
+        egípcia, apresentando uma tumba totalmente reconstruída e mais de 5.000 artefatos. Os visitantes podem explorar
+        a vida cotidiana, as práticas religiosas e as crenças dos antigos egípcios na vida após a morte por meio de
+        exibições interativas e artefatos autênticos.
       </p>
     </div>
   </div>
-  <h2>Museu +</h2>
+
+
+  <br>
+  <h2>Audio</h2>
+  <p>
+    Áudio a falar sobre a história das vitrines de pragas que ameaçavam algumas das principais culturas de George
+    Washington Carver, preparadas e fixadas por Carl Cotton
+  </p>
   <audio controls>
-    <source src="assets\images\Field\sue.mp3" type="audio/mp3">
-  </audio> <br><br><br>
+    <source src="assets/images/Field/InsectsOfTheWorld.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <p>
+    Áudio falando sobre a história dos modelos de algodoeiro e leguminosa, ilustrando a ideia por trás de uma das
+    principais mensagens de Carver: a rotação de culturas
+  </p>
+  <audio controls>
+    <source src="assets/images/Field/PlantsOfTheWorld.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -215,11 +234,10 @@
   <!-- Seção da localização -->
   <div class="row mt-5">
     <div class="col-md-6">
-      
-      <h2>Contactos:</h2>
-        <p>Questões Gerais: 312 922 9410</p>
-        <p>Teletipo: 312 665 7669</p>
-        <p>Visite o site: <a href="https://www.fieldmuseum.org/">aqui</a></p>
+      <h2>Localização:</h2>
+      <p>1400 S Lake Shore Dr </p>
+      <p>Chicago, IL 60605</p>
+      <p>USA</p>
     </div>
   </div>
   <div class="container-fluid">
@@ -232,10 +250,10 @@
       </div>
       <!--contactos-->
       <div class="col-md-6 contacts">
-        <h2>Localização:</h2>
-      <p>1400 S Lake Shore Dr </p>
-      <p>Chicago, IL 60605</p>
-      <p>USA</p>
+        <h2>Contactos:</h2>
+        <p>Questões Gerais: 312 922 9410</p>
+        <p>Teletipo: 312 665 7669</p>
+        <p>Visite o site: <a href="https://www.fieldmuseum.org/">aqui</a></p>
       </div>
     </div>
   </div>
@@ -243,7 +261,7 @@
   <br>
   <br>
   <!-- Seção de avaliações -->
-  <div class="avaliacoes ml-3">
+  <div class="avaliacoes">
     <h2>Avaliações</h2>
     <img class="star" src="assets/images/StarFilled.png" alt="Star">
     <img class="star" src="assets/images/StarFilled.png" alt="Star">
@@ -371,4 +389,4 @@
 
   <br><br>
 
-</div><br><br>
+</div>
